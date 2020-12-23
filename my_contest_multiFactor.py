@@ -74,7 +74,61 @@ def try_to_save_time(_my_sequence, _stub2):
 
         time.sleep(0.05)
 
-    
+def GetIndex(name):
+    # ['day','stock','open','high','low','close','volume']
+
+    if name=='day':
+        return 0
+    elif name=='stock':
+        return 1
+    elif name=='open':
+        return 2
+    elif name=='high':
+        return 3
+    elif name=='low':
+        return 4
+    elif name=='close':
+        return 5
+    elif name=='volume':
+        return 6
+        
+def Calculate_ZhangFu(AllData, Days, length):
+    if Days > 1:
+        latestClose = AllData[-1][:, 5]
+        beforeLatesClose = AllData[-2][:, 5]
+        return (latestClose-beforeLatesClose)/beforeLatesClose
+    else:
+        return [0]*length
+
+def Calculate_SixROI(AllData, Days, length):
+    if Days > 5:
+        latestClose = AllData[-1][:, 5]
+        beforeLatesClose = AllData[-6][:, 5]
+        return list(-1*(latestClose-beforeLatesClose)/beforeLatesClose)
+    else:
+        return [0]*length
+
+def Calculate_TwentyMax(AllData, Days, length):
+    if Days > 19:
+        AllData = np.array(AllData)
+        last20Close = AllData[:, :, 5]
+        return list(last20Close[-20:, :].max(0))
+    else:
+        return [0]*length
+
+def Calculate_Alpha118(AllData, Days, length):
+    if Days > 19:
+        AllData = np.array(AllData)
+        last20High = AllData[:, :, 3]
+        last20Open = AllData[:, :, 2]
+        last20Low = AllData[:, :, 4]
+
+        sumOfHigh = (last20High-last20Open)[-20:, :].sum(0)
+        sumOfLow = (last20Open-last20Low)[-20:, :].sum(0)
+
+        return list(sumOfHigh/sumOfLow)
+    else:
+        return [0]*length
 
 # 一些初始化
 
@@ -88,74 +142,58 @@ dic = {}
 response= try_to_save_time(my_sequence,stub2)
 my_sequence = response.sequence
 
-for i in range(0,len(response.dailystk)):
-    StockCode = response.dailystk[i].values[1]
-    dic[StockCode] = pd.DataFrame(columns = ['open','high','low','close','volume'])
+# 远程主机返回的所有股票数据都储存起来
+# AllData将是一个储存二维数组的list
+AllData = []
 
-all_dic = pd.DataFrame(columns = ['day','stock','open','high','low','close','volume'])
-
-
-current_days = my_sequence
-
+# 储存我们已经实际接收到的数据的天数
+Days = 0
 
 ## 正式运行
 print("I'm going...")
 while(True):
     
-    my_sequence += 1
     response = try_to_save_time(my_sequence,stub2)
+    my_sequence = response.sequence
+    
+    Days += 1
 
     start =  time.time()
 
-    print(response.has_next_question,response.capital,response.sequence,response.positions)
+    print(response.has_next_question,response.capital,response.sequence)
+    """ 
+    每天远程主机返回的数据都储存为一个二维数组
+    每一行：代表一支股票
+    每一列：['day','stock','open','high','low','close','volume']
+    """
+    NumOfStock = len(response.dailystk)
+    OneDayData = np.array([response.dailystk[i].values for i in range(0, NumOfStock)])
+    stocklist = OneDayData[:, 1]
+    lenOfStock = len(stocklist)
 
-
-    temp_dic = pd.DataFrame(columns = ['day','stock','open','high','low','close','volume'])
-
-
-    for i in range(0,len(response.dailystk)):
-        # newKey = str(response.dailystk[i]).split('\n')
-        # newKey = [float(j[8:]) for j in newKey if j != '']
-        
-        # temp_dic = temp_dic.append(pd.Series(response.dailystk[i].values),ignore_index=True)
-        temp_dic = temp_dic.append({'day':response.dailystk[i].values[0],'stock':int(response.dailystk[i].values[1]), 'open':response.dailystk[i].values[2],'high':response.dailystk[i].values[3],'low':response.dailystk[i].values[4],'close':response.dailystk[i].values[5],'volume':response.dailystk[i].values[6]}, ignore_index=True)
-
-    all_dic = all_dic.append(temp_dic) # 这样更节省时间
-
+    AllData.append(OneDayData)
     
-    # 把全部数据分拆到股票各自的列表里。需要什么指标的话在这里直接算，节省时间。
-    stocklist = list(set(all_dic['stock']))
-    dic = {}
-    for i in stocklist:
-        j = all_dic[all_dic['stock']==i]
-        j.index = j['day']
-        j['zhangfu'] = j['close'].diff()/j['close'].shift() # 类似这样的指标什么的
-        j['6dayRS'] = j['close'].diff(6)/j['close'].shift(6)
-        j['lottery'] = j['zhangfu'].rolling(20).max()
-        #j['alpha118'] = (j['high']-j['open']).rolling(20).sum() / (j['open']-j['low']).rolling(20).sum()
-        dic[i] = j
+    # 计算不同因子
+    ZhangFu_li = Calculate_ZhangFu(AllData, Days, lenOfStock)
+    SixROI_li = Calculate_SixROI(AllData, Days, lenOfStock)
+    TwentyMax_li = Calculate_TwentyMax(AllData, Days, lenOfStock)
+    Alpha118_li = Calculate_Alpha118(AllData, Days, lenOfStock)
+
 
     use_time = time.time() - start
     print("Time of processing data: ", use_time)
 
     # 以下就可以开始写策略了。
-
-    positions_1 = [0]*len(stocklist)
-    positions_2 = [0]*len(stocklist)
-    for j in stocklist:
-        # positions[int(j-1000)] = dic[j].loc[current_days]['100dayRS']
-        # positions[int(j-1000)] = -dic[j].loc[current_days]['close']
-        positions_1[int(j-1000)] = -dic[j].loc[current_days]['6dayRS']
-        positions_2[int(j-1000)] = -dic[j].loc[current_days]['alpha118']
-
-
-    positions_1 = (pd.Series(positions_1)).fillna(0)
+    
+    positions_1 = (pd.Series(SixROI_li)).fillna(0)
     positions_1 = positions_1.rank()
     positions_1 = positions_1.fillna(0)
-    positions_2 = (pd.Series(positions_2)).fillna(0)
+
+    positions_2 = (pd.Series(Alpha118_li)).fillna(0)
     positions_2 = positions_2.rank()
     positions_2 = positions_2.fillna(0)
     
+    # 计算因子组合，可以设定不同的权重
     _pos = list((1*positions_1 + 1*positions_2).rank().fillna(0))
 
     for k in range(0,len(_pos)):
@@ -174,7 +212,7 @@ while(True):
     
     # _pos = [i * response.capital*1.95/moneyspent for i in _pos]
     for k in range(0,len(_pos)):
-        _pos[k] = _pos[k] * response.capital*1.95/140/dic[k+1000].loc[current_days]['close']
+        _pos[k] = _pos[k] * response.capital*1.95/140/AllData[-1][k, 5]
 
     _pos = list((pd.Series(_pos)).fillna(0))
 
@@ -191,6 +229,8 @@ while(True):
     use_time = time.time() - start
     print("Time of posting position: %s", use_time)
     time.sleep(max(4.75-use_time,0.1))
+
+    
 
 
     
