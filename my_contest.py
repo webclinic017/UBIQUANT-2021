@@ -103,7 +103,7 @@ while(True):
     response = try_to_save_time(my_sequence,stub2)
 
     start =  time.time()
-    print(response.has_next_question,response.capital,response.sequence)
+    print(response.has_next_question,response.capital,response.sequence,response.positions)
 
     temp_dic = pd.DataFrame(columns = ['day','stock','open','high','low','close','volume'])
 

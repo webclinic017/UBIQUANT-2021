@@ -60,18 +60,17 @@ def send_positions(_positions,_stub,_session_key,_sequence):
                                                                 positions = _positions ))
     print(response3)
 
+
 def try_to_save_time(_my_sequence, _stub2):
     while True:
         response = get_data(_my_sequence,_stub2)
-        day = response.sequence
+        _new_sequence = response.sequence
+        
+        if _new_sequence != _my_sequence:
+            return _new_sequence
 
-        if response.sequence == -1:
-            _my_sequence==0
-            continue
-        elif day!=_my_sequence:
-            return response
+        time.sleep(0.2)
 
-        time.sleep(0.05)
 
 def GetIndex(name):
     # ['day','stock','open','high','low','close','volume']
@@ -90,16 +89,8 @@ def GetIndex(name):
         return 5
     elif name=='volume':
         return 6
-
-# --------------------------------------------
-# 各个因子分值的计算函数
+        
 def Calculate_ZhangFu(AllData, Days, length):
-    '''
-    :AllData: 所有的股票数据
-    :Days:    已经有多少天的数据
-    :length:  股票数量
-    :return:  各个股票的因子值（未排序）
-    '''
     if Days > 1:
         latestClose = AllData[-1][:, 5]
         beforeLatesClose = AllData[-2][:, 5]
@@ -108,10 +99,18 @@ def Calculate_ZhangFu(AllData, Days, length):
         return [0]*length
 
 def Calculate_SixROI(AllData, Days, length):
-    if Days > 5:
+    if Days > 7:
         latestClose = AllData[-1][:, 5]
-        beforeLatesClose = AllData[-6][:, 5]
-        return list(-1*(latestClose-beforeLatesClose)/beforeLatesClose)
+        beforeLatesClose = AllData[-7][:, 5]
+        return list(-(latestClose-beforeLatesClose)/beforeLatesClose)
+    else:
+        return [0]*length
+
+# 小市值
+def Calculate_Close(AllData, Days, length):
+    if Days > 7:
+        latestClose = AllData[-1][:, 5]
+        return list(-latestClose)
     else:
         return [0]*length
 
@@ -137,35 +136,6 @@ def Calculate_Alpha118(AllData, Days, length):
     else:
         return [0]*length
 
-def Calculate_Size(AllData, Days, length):
-    return list(AllData[-1][:, 5])
-
-# -----------------------------------------
-
-# -----------------------------------------
-# 根据因子分值计算是否调仓
-def Calculate_Position(factor):
-    '''
-    :factor: 对应因子的分值
-    :return: 根据该因子计算的调仓结果
-    '''
-    positions = (pd.Series(factor)).fillna(0)
-    positions = positions.rank()
-
-    # 取十分位
-    percent = len(positions)/10
-
-    for k in range(0,len(positions)):
-        if positions[k]>len(positions)-percent-1:
-            positions[k] = 1
-        elif positions[k]<=percent+1:
-            positions[k]= -1
-        else:
-            positions[k] = 0
-    
-    return positions
-# -------------------------------------
-
 # 一些初始化
 
 stub,session_key = initialize()
@@ -175,8 +145,7 @@ my_sequence = 0
 
 dic = {}
 
-response= try_to_save_time(my_sequence,stub2)
-my_sequence = response.sequence
+my_sequence = try_to_save_time(my_sequence,stub2)
 
 # 远程主机返回的所有股票数据都储存起来
 # AllData将是一个储存二维数组的list
@@ -189,11 +158,12 @@ Days = 0
 print("I'm going...")
 while(True):
     
+    start =  time.time()
+    response = get_data(my_sequence,stub2)
+    # my_sequence = response.sequence
     Days += 1
 
-    start =  time.time()
-
-    print(response.has_next_question,response.capital,response.sequence,response.positions)
+    print(response.has_next_question,response.capital,response.sequence)
     """ 
     每天远程主机返回的数据都储存为一个二维数组
     每一行：代表一支股票
@@ -207,33 +177,45 @@ while(True):
     AllData.append(OneDayData)
     
     # 计算不同因子
-    Size_li = Calculate_Size(AllData, Days, lenOfStock)
-    ZhangFu_li = Calculate_ZhangFu(AllData, Days, lenOfStock)
+    # ZhangFu_li = Calculate_ZhangFu(AllData, Days, lenOfStock)
     SixROI_li = Calculate_SixROI(AllData, Days, lenOfStock)
-    TwentyMax_li = Calculate_TwentyMax(AllData, Days, lenOfStock)
-    Alpha118_li = Calculate_Alpha118(AllData, Days, lenOfStock)
+    # TwentyMax_li = Calculate_TwentyMax(AllData, Days, lenOfStock)
+    # Alpha118_li = Calculate_Alpha118(AllData, Days, lenOfStock)
+    Close_li = Calculate_Close(AllData, Days, lenOfStock)
+
 
 
     use_time = time.time() - start
     print("Time of processing data: ", use_time)
 
     # 以下就可以开始写策略了。
-    
-    positions_of_Size = Calculate_Position(Size_li)
-    positions_of_SixROI = Calculate_Position(ZhangFu_li)
-    #print("position of size: ", positions_of_Size)
-    #print("position of sixROI: ", positions_of_SixROI)
+    # 两个因子
+    positions_1 = (pd.Series(SixROI_li)).fillna(0)
+    # positions_1 = positions_1.rank()
+    # positions_1 = positions_1.fillna(0)
+
+    positions_2 = (pd.Series(Close_li)).fillna(0)
+    # positions_2 = positions_2.rank()
+    # positions_2 = positions_2.fillna(0)
     
     # 计算因子组合，可以设定不同的权重
-    _pos = list(1*positions_of_Size + 1*positions_of_SixROI)
+    # _pos = list((1*positions_1 + 1*positions_2).rank().fillna(0))
+    _pos = list((positions_1).rank().fillna(0))
+    _pos2 = list((positions_2).rank().fillna(0))
+    _finale_position = [0]*351
 
     for k in range(0,len(_pos)):
-        if _pos[k]>=1:
-            _pos[k] = 1
-        elif _pos[k]<=-1:
-            _pos[k]= -1
-        else:
-            _pos[k] = 0
+        if _pos[k]>314:
+            _finale_position[k] += 0.5
+        elif _pos[k] <=35:
+            _finale_position[k] -= 0.5
+        # else:
+        #     _pos[k] = 0
+    for k in range(0,len(_pos2)):
+        if _pos2[k]>333:
+            _finale_position[k] += 1
+        elif _pos2[k] <=18:
+            _finale_position[k] -= 1
 
     moneyspent = 0
 
@@ -243,7 +225,7 @@ while(True):
     
     # _pos = [i * response.capital*1.95/moneyspent for i in _pos]
     for k in range(0,len(_pos)):
-        _pos[k] = _pos[k] * response.capital*1.95/140/AllData[-1][k, 5]
+        _finale_position[k] = _finale_position[k] * response.capital/70/AllData[-1][k, 5]
 
     _pos = list((pd.Series(_pos)).fillna(0))
 
@@ -255,16 +237,15 @@ while(True):
 
     # 以下不用管，是框架，以上是策略。
 
-    send_positions(_pos ,stub,session_key,my_sequence)
+    send_positions(_finale_position ,stub,session_key,my_sequence)
 
     use_time = time.time() - start
     print("Time of posting position: %s", use_time)
-    time.sleep(max(4.75-use_time,0.1))
+    time.sleep(max(2-use_time,0.1))
 
-    response = try_to_save_time(my_sequence,stub2)
-    my_sequence = response.sequence
 
-    
+    my_sequence = try_to_save_time(my_sequence,stub2)
+
 
 
     

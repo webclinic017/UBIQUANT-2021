@@ -1,15 +1,14 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
-import warnings
+# import warnings
 import sys
-import math
-warnings.filterwarnings("ignore")
+# warnings.filterwarnings("ignore")
 
 
 a = pd.read_csv('CONTEST_DATA_IN_SAMPLE_2.csv',names=['day','stock','open','high','low','close','volume'])
 
-FactorNum = 11
+FactorNum = 9
 
 stocklist = list(set(a['stock']))
 dic = {}
@@ -28,17 +27,6 @@ for i in stocklist:
     j['alpha118'] = (j['high']-j['open']).rolling(20).sum() / (j['open']-j['low']).rolling(20).sum()
     j['lottery'] = j['zhangfu'].rolling(20).max()
 
-    # 遗传因子Alpha1
-    j['alpha1'] = j['high']/j['close'].shift(1)-1
-    j['alpha1_2'] = np.sqrt(abs(j['alpha1']))*j['alpha1']/abs(j['alpha1'])
-    j['alpha1_3'] = np.log(j['alpha1_2'].rolling(20).mean()/j['alpha1_2'].rolling(20).std())
-    #j['alpha1_3'] = np.log(j['alpha1_2'].rolling(20).mean())
-    
-    # 遗传因子Alpha4
-
-    # 反转+小市值
-
-
     # j.to_csv('./data/'+str(i)+'.csv')
     dic[i] = j
 
@@ -49,20 +37,17 @@ def Positions(index):
     _all = []
     sdf = [1]
 
-    # 这里可以调整换仓周期
-    for i in range(25,len(list(set(a['day'])))-1,1):
+    for i in range(25,len(list(set(a['day'])))-1):
         '''
         根据某一个因子初始化position
         '''
         positions = [0]*len(stocklist)
-        positions_1 = [0]*len(stocklist)
-        positions_2 = [0]*len(stocklist)
         for j in stocklist:
-            #1、positions[j-1000] = dic[j].loc[i-2]['100dayRS']
+            #1、100dayRS
             if index==1:
                 positions[j-1000] = dic[j].loc[i-2]['100dayRS']
             
-            #2、小市值
+            #2、positions[j-1000] = -dic[j].loc[i-2]['close']
             elif index==2:
                 positions[j-1000] = -dic[j].loc[i-2]['close']
 
@@ -82,7 +67,7 @@ def Positions(index):
             elif index==6:
                 positions[j-1000]  = -(dic[j].loc[i-2]['volume']/dic[j].loc[i-2]['20meanvolume'])
 
-            #7 6日反转因子
+            #7 positions[j-1000] = -(dic[j].loc[i-2]['6dayRS'])
             elif index==7:
                 positions[j-1000] = -(dic[j].loc[i-2]['6dayRS'])
             
@@ -94,57 +79,16 @@ def Positions(index):
             #9 positions[j-1000] = dic[j].loc[i-2]['lottery']
             elif index==9:
                 positions[j-1000] = dic[j].loc[i-2]['lottery']
-
-            #10 遗传因子Alpha1
-            elif index==10:
-                positions[j-1000] = dic[j].loc[i-2]['alpha1_3']
-            
-            #11 反转+小市值
-            elif index==11:
-                positions_1[j-1000] = -(dic[j].loc[i-2]['6dayRS'])
-                positions_1 = (pd.Series(positions_1)).fillna(0).rank()
-                
-                positions_2[j-1000] = -(dic[j].loc[i-2]['close'])
-                positions_2 = (pd.Series(positions_2)).fillna(0).rank()
-
-                positions = positions_1+positions_2
-
+        
         positions = list((pd.Series(positions)).fillna(0))
 
-        '''
-        对因子排序并调整建仓
-        '''
-        _pos = list(pd.Series(positions).rank())
-        for k in range(0,len(_pos)):
-            if _pos[k]>316:
-                _pos[k] = 1
-            elif _pos[k]<=35:
-                _pos[k]= -1
-            else:
-                _pos[k] = 0
         
-        '''
-        t确定仓位，t+1成交，t+2确认收益
-        '''
-        allsum = 0
-        for j in range(0,len(_pos)):
-            allsum+= dic[j+1000].loc[i]['zhangfu']*_pos[j]
-        
-        allsum = allsum/70
-        _all.append(allsum)
-        sdf.append(sdf[-1]*(1+allsum))
-
-
-        if(i%100 == 0):
-            print(i)
-    
-    return _all, sdf
 
     
 
 
 def PP_Positions():
-
+    
     shifenwei = {}
     for iter in range(0,10):
         shifenwei[iter] = [1]
@@ -199,12 +143,13 @@ def Correlaion(dic):
     all_list = []
     sdf_list = []
     #for i in range(1, FactorNum+1):
-    for i in [2, 7]:
+    for i in [6, 7, 8, 9]:
         print("calculating factor {} ......".format(i))
         _all, sdf = Positions(i)
         all_list.append(_all)
         sdf_list.append(sdf)
-        
+    
+
     return all_list, sdf_list
 
 if __name__ == '__main__':
@@ -212,13 +157,13 @@ if __name__ == '__main__':
     # print(len(sys.argv))
 
     if(sys.argv[1] == "1"):
-        _all, sdf = Positions(11)
+        _all, sdf = Positions(9)
         plt.plot(_all)
-        plt.savefig('../result/反转_小市值_1_10.png')  # 每一天收益率的图
+        plt.savefig('../result/lottery_1_10.png')  # 每一天收益率的图
         plt.cla()
 
         plt.plot(sdf)
-        plt.savefig('../result/反转_小市值_2_10.png')  # 做多前1/10,做空前1/10的绝对收益
+        plt.savefig('../result/lottery_2_10.png')  # 做多前1/10,做空前1/10的绝对收益
         plt.cla()
 
     elif(sys.argv[1] == "2"):
@@ -232,15 +177,16 @@ if __name__ == '__main__':
     elif(sys.argv[1] == "3"):
         all_list, sdf_list = Correlaion(dic)
         
+
         all_column = ['100dayRS', 'close', 'volume', 'cha', '6', '20meanvolume',
                     '6dayRS', 'alpha118', 'lottery']
         datadic = {}
-        column = ['close', '6dayRS']
+        column = all_column[5:]
         for col, factor in zip(column, all_list):
             datadic[col] = factor
         
         factor_df = pd.DataFrame(datadic)
-        # factor_df.to_csv('ROI.csv')
+        factor_df.to_csv('ROI.csv')
         cor1 = factor_df.corr()
         print(cor1)
 
