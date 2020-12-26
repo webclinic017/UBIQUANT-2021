@@ -63,13 +63,12 @@ def send_positions(_positions,_stub,_session_key,_sequence):
 def try_to_save_time(_my_sequence, _stub2):
     while True:
         response = get_data(_my_sequence,_stub2)
-        _my_sequence = response.sequence
+        sequence = response.sequence
 
         if response.sequence == -1:
             _my_sequence==0
-        elif _my_sequence==0 and response.sequence>0:
-            return response
-        elif response.sequence == _my_sequence:
+            continue
+        elif sequence!=_my_sequence:
             return response
 
         time.sleep(0.05)

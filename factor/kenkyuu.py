@@ -1,19 +1,20 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
-import warnings
+# import warnings
 import sys
-warnings.filterwarnings("ignore")
+# warnings.filterwarnings("ignore")
 
 
 a = pd.read_csv('CONTEST_DATA_IN_SAMPLE_2.csv',names=['day','stock','open','high','low','close','volume'])
 
+FactorNum = 9
 
 stocklist = list(set(a['stock']))
 dic = {}
 for i in stocklist:
     
-    # 在这里计算想要用到的指标
+    # 在这里计算想要用到的指标(FactorNum += 1)
     j = a[a['stock']==i]
     j.index = j['day']
     j['zhangfu'] = j['close'].diff()/j['close'].shift()
@@ -26,20 +27,15 @@ for i in stocklist:
     j['alpha118'] = (j['high']-j['open']).rolling(20).sum() / (j['open']-j['low']).rolling(20).sum()
     j['lottery'] = j['zhangfu'].rolling(20).max()
 
-
     # j.to_csv('./data/'+str(i)+'.csv')
     dic[i] = j
 
-
-_all = []
-sdf = [1]
-
-shifenwei = {}
-for iter in range(0,10):
-    shifenwei[iter] = [1]
+print("number of testing factors: ", FactorNum)
 
 
-def positions():
+def Positions(index):
+    _all = []
+    sdf = [1]
 
     for i in range(25,len(list(set(a['day'])))-1):
         '''
@@ -48,18 +44,41 @@ def positions():
         positions = [0]*len(stocklist)
         for j in stocklist:
             #1、positions[j-1000] = dic[j].loc[i-2]['100dayRS']
+            if index==1:
+                positions[j-1000] = dic[j].loc[i-2]['100dayRS']
+            
             #2、positions[j-1000] = -dic[j].loc[i-2]['close']
+            elif index==2:
+                positions[j-1000] = -dic[j].loc[i-2]['close']
+
             #3、positions[j-1000]  = -(np.corrcoef(dic[j].loc[i-10:i-2]['close'],dic[j].loc[i-10:i-2]['volume']))[0][1]
+            elif index==3:
+                positions[j-1000]  = -(np.corrcoef(dic[j].loc[i-10:i-2]['close'],dic[j].loc[i-10:i-2]['volume']))[0][1]
+
             #4、positions[j-1000]  = (np.std(dic[j].loc[i-6:i-2]['cha'])) 第三组最有效 所谓的std
+            elif index==4:
+                positions[j-1000]  = (np.std(dic[j].loc[i-6:i-2]['cha']))
+
             #5、positions[j-1000]  = (dic[j].loc[i-2]['6'])
+            elif index==5:
+                positions[j-1000]  = (dic[j].loc[i-2]['6'])
+
             #6 positions[j-1000]  = -(dic[j].loc[i-2]['volume']/dic[j].loc[i-2]['20meanvolume'])
-            # 7 
-            # positions[j-1000] = -(dic[j].loc[i-2]['6dayRS'])
-            # positions[j-1000]  = (np.std(dic[j].loc[i-21:i-2]['volume']))
+            elif index==6:
+                positions[j-1000]  = -(dic[j].loc[i-2]['volume']/dic[j].loc[i-2]['20meanvolume'])
+
+            #7 positions[j-1000] = -(dic[j].loc[i-2]['6dayRS'])
+            elif index==7:
+                positions[j-1000] = -(dic[j].loc[i-2]['6dayRS'])
+            
             # 在这里引用想用的指标
-            # positions[j-1000] = dic[j].loc[i-2]['alpha118']
-            # 8
-            positions[j-1000] = dic[j].loc[i-2]['lottery']
+            #8 positions[j-1000] = dic[j].loc[i-2]['alpha118']
+            elif index==8:
+                positions[j-1000] = dic[j].loc[i-2]['alpha118']
+            
+            #9 positions[j-1000] = dic[j].loc[i-2]['lottery']
+            elif index==9:
+                positions[j-1000] = dic[j].loc[i-2]['lottery']
         
         positions = list((pd.Series(positions)).fillna(0))
 
@@ -95,7 +114,11 @@ def positions():
     
 
 
-def pp_positions():
+def PP_Positions():
+    
+    shifenwei = {}
+    for iter in range(0,10):
+        shifenwei[iter] = [1]
     
     for i in range(25,len(list(set(a['day'])))-1):
         '''
@@ -143,13 +166,24 @@ def pp_positions():
         
     return shifenwei
 
+def Correlaion(dic):
+    all_list = []
+    sdf_list = []
+    #for i in range(1, FactorNum+1):
+    for i in [6, 7, 8, 9]:
+        print("calculating factor {} ......".format(i))
+        _all, sdf = Positions(i)
+        all_list.append(_all)
+        sdf_list.append(sdf)
+        
+    return all_list, sdf_list
 
 if __name__ == '__main__':
 
     # print(len(sys.argv))
 
     if(sys.argv[1] == "1"):
-        _all, sdf = positions()
+        _all, sdf = Positions(9)
         plt.plot(_all)
         plt.savefig('../result/lottery_1_10.png')  # 每一天收益率的图
         plt.cla()
@@ -159,13 +193,29 @@ if __name__ == '__main__':
         plt.cla()
 
     elif(sys.argv[1] == "2"):
-        shifenwei = pp_positions()
+        shifenwei = PP_Positions()
         for iter in [0, 3, 6, 9]:
             plt.plot(shifenwei[iter],label=iter)
         plt.legend()
         plt.savefig('../result/ROC8_3.png')
         plt.cla() # 每个10分位的收益率
     
+    elif(sys.argv[1] == "3"):
+        all_list, sdf_list = Correlaion(dic)
+        
+
+        all_column = ['100dayRS', 'close', 'volume', 'cha', '6', '20meanvolume',
+                    '6dayRS', 'alpha118', 'lottery']
+        datadic = {}
+        column = all_column[5:]
+        for col, factor in zip(column, all_list):
+            datadic[col] = factor
+        
+        factor_df = pd.DataFrame(datadic)
+        factor_df.to_csv('ROI.csv')
+        cor1 = factor_df.corr()
+        print(cor1)
+
     else:
         print("选择测算方法：\n1-多空各1/10\n2-十分位做多\n")
 
