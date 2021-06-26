@@ -40,20 +40,20 @@ warnings.filterwarnings("ignore")
 
 def initialize():
 
-    channel = grpc.insecure_channel('47.103.23.116:56702')
+    channel = grpc.insecure_channel('47.100.97.93:40723')
     stub = contest_pb2_grpc.ContestStub(channel)
-    response = stub.login(contest_pb2.LoginRequest(user_id = 69, user_pin ='vKfPGNrn'))
+    response = stub.login(contest_pb2.LoginRequest(user_id = 67, user_pin ='GkwB5rYqHu'))
     print(response)
-    return stub,response.session_key
+    return stub, response.session_key
 
 def get_data(_sequence,stub2):
-    response2 = stub2.get_question(question_pb2.QuestionRequest(user_id = 69, sequence = _sequence))
+    response2 = stub2.get_question(question_pb2.QuestionRequest(user_id = 67, user_pin ='GkwB5rYqHu', sequence = _sequence))
 
     return response2
 
 def send_positions(_positions,_stub,_session_key,_sequence):
-    response3 = stub.submit_answer(contest_pb2.AnswerRequest(   user_id = 69, \
-                                                                user_pin ='vKfPGNrn', \
+    response3 = stub.submit_answer(contest_pb2.AnswerRequest(   user_id = 67, \
+                                                                user_pin ='GkwB5rYqHu', \
                                                                 session_key = _session_key, \
                                                                 sequence = _sequence,\
                                                                 positions = _positions ))
@@ -62,30 +62,27 @@ def send_positions(_positions,_stub,_session_key,_sequence):
 def try_to_save_time(_my_sequence, _stub2):
     '''
     初始请求时间计算，为了尽量能够更早的
-
     '''
     while True:
-        try:
-            response = get_data(_my_sequence,_stub2)
-        except:
-            time.sleep(5)
-            continue
+        
+        response = get_data(_my_sequence,_stub2)
         
         if response.sequence == -1:
             _my_sequence==0
-        elif _my_sequence==0 and response.sequence>0:
-            return response
-        elif response.sequence == _my_sequence:
+            time.sleep(0.05)
+            continue
+        
+        elif response.sequence>=0:
             return response
 
-        time.sleep(0.05)
+        
 
     
 
 # 一些初始化
 
 stub,session_key = initialize()
-channel2 = grpc.insecure_channel('47.103.23.116:56701')
+channel2 = grpc.insecure_channel('47.100.97.93:40722')
 stub2 = question_pb2_grpc.QuestionStub(channel2)
 
 my_sequence = 0
@@ -103,7 +100,7 @@ while(True):
     response = try_to_save_time(my_sequence,stub2)
 
     start =  time.time()
-    print(response.has_next_question,response.capital,response.sequence,response.positions)
+    print(response.has_next_question,response.capital,response.sequence)
 
     temp_dic = pd.DataFrame(columns = ['day','stock','open','high','low','close','volume'])
 
@@ -156,7 +153,7 @@ while(True):
     _pos = list((pd.Series(_pos)).fillna(0))
 
     for k in range(0,len(_pos)):
-        if _pos[k]>316:
+        if _pos[k]>465:
             _pos[k] = 1
         elif _pos[k]<=35:
             _pos[k]= -1

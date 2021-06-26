@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0equestion.proto\x1a\x0c\x63ommon.proto\"4\n\x0fQuestionRequest\x12\x0f\n\x07user_id\x18\x01 \x01(\x05\x12\x10\n\x08sequence\x18\x02 \x01(\x03\"\x94\x01\n\x10QuestionResponse\x12\x0f\n\x07user_id\x18\x01 \x01(\x05\x12\x10\n\x08sequence\x18\x02 \x01(\x03\x12\x19\n\x11has_next_question\x18\x03 \x01(\x08\x12\x0f\n\x07\x63\x61pital\x18\x04 \x01(\x01\x12\x1e\n\x08\x64\x61ilystk\x18\x05 \x03(\x0b\x32\x0c.DoubleArray\x12\x11\n\tpositions\x18\x06 \x03(\x01\x32?\n\x08Question\x12\x33\n\x0cget_question\x12\x10.QuestionRequest\x1a\x11.QuestionResponseb\x06proto3'
+  serialized_pb=b'\n\x0equestion.proto\x1a\x0c\x63ommon.proto\"F\n\x0fQuestionRequest\x12\x0f\n\x07user_id\x18\x01 \x01(\x05\x12\x10\n\x08user_pin\x18\x02 \x01(\t\x12\x10\n\x08sequence\x18\x03 \x01(\x03\"\x94\x01\n\x10QuestionResponse\x12\x0f\n\x07user_id\x18\x01 \x01(\x05\x12\x10\n\x08sequence\x18\x02 \x01(\x03\x12\x19\n\x11has_next_question\x18\x03 \x01(\x08\x12\x0f\n\x07\x63\x61pital\x18\x04 \x01(\x01\x12\x1e\n\x08\x64\x61ilystk\x18\x05 \x03(\x0b\x32\x0c.DoubleArray\x12\x11\n\tpositions\x18\x06 \x03(\x01\x32?\n\x08Question\x12\x33\n\x0cget_question\x12\x10.QuestionRequest\x1a\x11.QuestionResponseb\x06proto3'
   ,
   dependencies=[common__pb2.DESCRIPTOR,])
 
@@ -43,8 +43,15 @@ _QUESTIONREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='sequence', full_name='QuestionRequest.sequence', index=1,
-      number=2, type=3, cpp_type=2, label=1,
+      name='user_pin', full_name='QuestionRequest.user_pin', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='sequence', full_name='QuestionRequest.sequence', index=2,
+      number=3, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -62,7 +69,7 @@ _QUESTIONREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=32,
-  serialized_end=84,
+  serialized_end=102,
 )
 
 
@@ -128,8 +135,8 @@ _QUESTIONRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=87,
-  serialized_end=235,
+  serialized_start=105,
+  serialized_end=253,
 )
 
 _QUESTIONRESPONSE.fields_by_name['dailystk'].message_type = common__pb2._DOUBLEARRAY
@@ -160,8 +167,8 @@ _QUESTION = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=237,
-  serialized_end=300,
+  serialized_start=255,
+  serialized_end=318,
   methods=[
   _descriptor.MethodDescriptor(
     name='get_question',

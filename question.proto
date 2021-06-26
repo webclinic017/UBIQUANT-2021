@@ -15,7 +15,9 @@ message QuestionRequest {
     // sequence means you want this sequence's question this time, server generate question sequence start from 1.
     // for your first query, please use sequence 0.
     // when you get reply successfully, you should use sequence + 1 from reply for your next query.
-    int64 sequence = 2;
+    // user_pin for verification
+    string user_pin = 2;
+    int64 sequence = 3;
 }
 
 //////////////////////////////////////////////////////////////////////////////

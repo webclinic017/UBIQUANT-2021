@@ -8,6 +8,7 @@ service Contest{
 
     // Requests a full update of the user data.
     rpc submit_answer (AnswerRequest) returns (AnswerResponse);
+
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -45,3 +46,4 @@ message AnswerResponse {
     bool accepted = 1;
     string reason = 2;
 }
+
