@@ -7,14 +7,15 @@ import matplotlib.pyplot as plt
 
 
 #################    Part1 策略净值图    #################
-def drawCumReturn(data, file_name='策略净值图.png'):
+def drawCumReturn(data, result, file_name='策略净值图.png'):
     if data.index.name != 'Open time':
         data = data.set_index('Open time')
 
-    #figure = plt.figure()
-    plt.figure(figsize = (15,7))
-    plt.subplot(1, 2, 1)
+    # figure = plt.figure()
+    # plt.figure(figsize = (15,7))
     plt.plot(data['equity_curve'], label='equity_curve', c='red')
+    total_ret, sharpe, _IC = result
+    plt.title("ret: {}, sharpe: {}, IC: {}, \n".format(round(total_ret,2), round(sharpe,2), round(_IC,4)))
     plt.legend()
     plt.savefig(file_name)
 

@@ -6,7 +6,7 @@ import sys
 warnings.filterwarnings("ignore")
 
 
-data = pd.read_csv('CONTEST_DATA_TEST_100_1.csv', usecols=[0,1,2,3,4,5,6],names=['date','stock','open','high','low','close','volume'])
+data = pd.read_csv('../../contest-4/CONTEST_DATA_TEST_100_1.csv', usecols=[0,1,2,3,4,5,6],names=['date','stock','open','high','low','close','volume'])
 print(data.head(3))
 
 stocklist = list(set(data['stock']))
@@ -59,19 +59,17 @@ def positions():
             # 在这里引用想用的指标
             # positions[j-1000] = dic[j].loc[i-2]['alpha118']
             # 8
-            positions[j-1000] = dic[j].loc[i-2]['lottery']
+            positions[j-6000] = dic[j].loc[i-2]['6dayRS']
         
         positions = list((pd.Series(positions)).fillna(0))
 
-        '''
-        对因子排序并调整建仓
-        '''
-        _pos = list(pd.Series(positions).rank())
+        _pos = list(pd.Series(positions).rank())  # 对因子排序并调整建仓
+        num_of_holding = 100                      # 同时持有股票数量
         for k in range(0,len(_pos)):
-            if _pos[k]>316:
-                _pos[k] = 1
-            elif _pos[k]<=35:
-                _pos[k]= -1
+            if _pos[k]>=(500-num_of_holding/2):
+                _pos[k] = -1
+            elif _pos[k]<(num_of_holding/2):
+                _pos[k]= 1
             else:
                 _pos[k] = 0
         
@@ -80,9 +78,9 @@ def positions():
         '''
         allsum = 0
         for j in range(0,len(_pos)):
-            allsum+= dic[j+1000].loc[i]['zhangfu']*_pos[j]
+            allsum+= dic[j+6000].loc[i]['zhangfu']*_pos[j]
         
-        allsum = allsum/70
+        allsum = allsum/num_of_holding
         _all.append(allsum)
         sdf.append(sdf[-1]*(1+allsum))
 
@@ -151,11 +149,11 @@ if __name__ == '__main__':
     if(sys.argv[1] == "1"):
         _all, sdf = positions()
         plt.plot(_all)
-        plt.savefig('../result/lottery_1_10.png')  # 每一天收益率的图
+        plt.savefig('6dayRS_1_10.png')  # 每一天收益率的图
         plt.cla()
 
         plt.plot(sdf)
-        plt.savefig('../result/lottery_2_10.png')  # 做多前1/10,做空前1/10的绝对收益
+        plt.savefig('6dayRS_2_10.png')  # 做多前1/10,做空前1/10的绝对收益
         plt.cla()
 
     elif(sys.argv[1] == "2"):
@@ -163,7 +161,7 @@ if __name__ == '__main__':
         for iter in [0, 3, 6, 9]:
             plt.plot(shifenwei[iter],label=iter)
         plt.legend()
-        plt.savefig('../result/ROC8_3.png')
+        # plt.savefig('ROC8_3.png')
         plt.cla() # 每个10分位的收益率
     
     else:

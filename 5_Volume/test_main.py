@@ -10,16 +10,15 @@ from plot_lib import *
 
 if __name__ == '__main__':
     init_cash = 100000
-    base_path = r"../backtesting_1/"  #原始数据储存的路径
+    time_win = 5             # 隔夜跳空的n日平均值
+    num_of_holding = 60      # 每天持有股票数量
+
+    base_path = r"../../contest-4/"  #原始数据储存的路径
     file_name = r"CONTEST_DATA_TEST_100_1.csv"
     merged_data = mergeData(base_path, file_name)
-    merged_data = calculateWeight(merged_data, equal_weight=True)
+    merged_data = calculateWeight(merged_data, num_of_holding, equal_weight=True)
     
-    # 计算因子。短均线：short_t，长均线：long_t
-    short_t = 3
-    long_t = 22
-    
-    merged_data = calculateFactor(merged_data, short_t, long_t)
+    merged_data = calculateFactor(merged_data, time_win, num_of_holding)
     #print(merged_data.head())
 
     data = merged_data.set_index('Open time')
@@ -39,5 +38,5 @@ if __name__ == '__main__':
 
 
     #########   (3) 画图    ###########
-    drawCumReturn(daily_return)
+    drawCumReturn(daily_return,(total_ret, sharpe, _IC))
     drawWeight(merged_data)

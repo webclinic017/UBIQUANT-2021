@@ -1,0 +1,9 @@
+(450000, 7)
+
+   Open time  Instrument    Open    High     Low   Close     Volume
+0          0        6000   60.90   61.17   59.57   59.70  2756306.0
+1          0        6001   16.13   16.21   16.04   16.13  2120886.0
+2          0        6002  138.29  138.81  134.84  135.53  4376392.0
+
+number of stocks: 500
+number of dates: 900

@@ -24,16 +24,16 @@ def mergeData(base_path, file_name):
     return data
 
 #################    Part2 计算各个币种的资金权重    #################
-def calculateWeight(data, equal_weight=True):
+def calculateWeight(data, num_of_holding, equal_weight=True):
     debug = False
 
     # 资产日收益率的波动率,过去100天（衡量资产的历史风险水平）
-    data.loc[:,'Volatility'] = data.groupby('Instrument')['Pct'].transform(lambda x: x.rolling(100).std())
-    data.loc[:,'Volatility'] = data.groupby('Instrument')['Volatility'].shift(2)
+    # data.loc[:,'Volatility'] = data.groupby('Instrument')['Pct'].transform(lambda x: x.rolling(100).std())
+    # data.loc[:,'Volatility'] = data.groupby('Instrument')['Volatility'].shift(2)
     # 股票数量
     num_of_stock = len(pd.unique(data['Instrument']))
     # 横截面上根据波动率倒数分配权重
-    data.loc[:,'Weight'] = 1/num_of_stock
+    data.loc[:,'Weight'] = 1/num_of_holding
 
     return data
 
@@ -42,70 +42,29 @@ def calculateWeight(data, equal_weight=True):
 #################    Part3 计算因子    #################
 def calculateFactor(merged_data, param_1=None, param_2=None, param_3=None, param_4=None):
     '''
-    双均线策略(根据收盘价计算)
-    param_1: short_t: 短均线周期
-    param_2: long_t: 长均线周期
+    股价因子
+    param_1: time_window: 股价的n日平均值
     '''
-    short_t = param_1
-    long_t = param_2
-
-    # Signal 1:利用短期移动均线与长期移动均线的交叉来择时
-    merged_data.loc[:,'Signal_1'] = 0
-    merged_data.loc[:,'Sma'] = merged_data.groupby('Instrument')['Close'].transform(lambda x: x.rolling(short_t).mean())
-    merged_data.loc[:,'Lma'] = merged_data.groupby('Instrument')['Close'].transform(lambda x: x.rolling(long_t).mean())
-    def MA(x):
-        _buy = (x.Sma>x.Sma.shift()) & (x.Sma>x.Lma) & (x.Sma.shift()<x.Lma.shift())  ## 买入信号
-        _sell = (x.Lma<x.Lma.shift()) & (x.Sma<x.Lma) & (x.Sma.shift()>x.Lma.shift()) ## 卖出信号
-        x.loc[_buy, 'Signal_1'] = 1
-        x.loc[_sell, 'Signal_1'] = -1
-        return x
-    merged_data = merged_data.groupby('Instrument').apply(MA)
-    # print('MA:\n', merged_data)
-
-    # Signal 2:MACD择时
-    merged_data.loc[:, 'Signal_2'] = 0
-    merged_data.loc[:, 'DIFF'] = merged_data['Sma']-merged_data['Lma']
-    merged_data.loc[:, 'DEA'] = merged_data.groupby('Instrument')['DIFF'].transform(lambda x: x.rolling(short_t).mean())
-    def MACD(x):
-        _buy = (x.DIFF>x.DIFF.shift()) & (x.DIFF>x.DEA) & (x.DIFF.shift()<x.DEA.shift()) & (x.DIFF>0)
-        _sell = (x.DIFF<x.DIFF.shift()) & (x.DIFF<x.DEA) & (x.DIFF.shift()>x.DEA.shift()) & (x.DIFF<0)
-        x.loc[_buy, 'Signal_2'] = 1
-        x.loc[_sell, 'Signal_2'] = -1
-        return x
-    merged_data = merged_data.groupby('Instrument').apply(MACD)
-
-    # Signal 3:TRIX择时
-    merged_data.loc[:, 'Signal_3'] = 0
-    merged_data.loc[:, 'EMA'] = merged_data.groupby('Instrument')['Sma'].transform(lambda x: x.rolling(short_t).mean())
-    merged_data.loc[:, 'EMA'] = merged_data.groupby('Instrument')['EMA'].transform(lambda x: x.rolling(short_t).mean())
-    merged_data.loc[:, 'TRIX'] = merged_data.groupby('Instrument')['EMA'].pct_change(1)
-    merged_data.loc[:, 'MATRIX'] = merged_data.groupby('Instrument')['TRIX'].transform(lambda x: x.rolling(short_t).mean())
-    def TRIX(x):
-        _buy = (x.TRIX>x.TRIX.shift()) & (x.TRIX>x.MATRIX) & (x.TRIX.shift()<x.MATRIX.shift())
-        _sell = (x.TRIX<x.TRIX.shift()) & (x.TRIX<x.MATRIX) & (x.TRIX.shift()>x.MATRIX.shift())
-        x.loc[_buy, 'Signal_3'] = 1
-        x.loc[_sell, 'Signal_3'] = -1
-        return x
-    merged_data = merged_data.groupby('Instrument').apply(TRIX)
-
-    # 因子原始值
-    merged_data.loc[:,'Raw_factor'] = merged_data['Signal_1']+merged_data['Signal_2']+merged_data['Signal_3']
-    merged_data.loc[:,'Flag'] = None
-    merged_data.loc[:,'Factor'] = None
-    def factor(x):
-        _buy = x.Raw_factor>0
-        _sell = x.Raw_factor<-1
-        x.loc[_buy, 'Flag'] = 1
+    time_window = param_1
+    num_of_holding = param_2
+    
+    merged_data.loc[:,'Factor'] = 0
+    
+    merged_data.loc[:,'Volume_MA'] = merged_data.groupby('Instrument')['Volume'].transform(lambda x: x.rolling(time_window).mean())
+    
+    merged_data.loc[:,'Raw_factor'] = merged_data.groupby('Open time')['Volume_MA'].rank()
+    print(merged_data[merged_data['Instrument']==6000].head(3))
+    def RS(x):
+        _buy = (x.Raw_factor<=(num_of_holding/2))          ## 做多成交量最低的
+        _sell = (x.Raw_factor>(500-num_of_holding/2))      ## 做空成交量最大的
         x.loc[_buy, 'Factor'] = 1
-        x.loc[_sell, 'Flag'] = -1
         x.loc[_sell, 'Factor'] = -1
         return x
-    # t日产生信号，t+1建仓，t+2开始确定收益；因子值向下填充
-    merged_data = merged_data.groupby('Instrument').apply(factor)
-    merged_data.loc[:,'Flag'] = merged_data.groupby('Instrument')['Flag'].shift(2)
-    merged_data.loc[:,'Factor'] = merged_data.groupby('Instrument')['Factor'].ffill()
+    merged_data = merged_data.groupby('Instrument').apply(RS)
+    print('RS:\n', merged_data[merged_data['Instrument']==6000].head(5))
+
     merged_data.loc[:,'Factor'] = merged_data.groupby('Instrument')['Factor'].shift(2)
-    # merged_data['Factor'].fillna(0)
+    merged_data['Factor'].fillna(0)
 
     return merged_data
 
@@ -130,7 +89,7 @@ def backTest(data):
             cum_return = cum_return.join(tmp, how='outer')
         count += 1
     #print('daily return\n', daily_return)
-    # 计算各个币种的涨幅，检查是否有爆仓
+    
     each_cum_return = pd.DataFrame()
     for column in cum_return.columns:
         each_cum_return.loc[:,column] = cum_return[column].cumprod()
@@ -138,8 +97,6 @@ def backTest(data):
     daily_return.loc[:,'strategy_mean'] = daily_return.sum(axis=1)
     daily_return.loc[:,'equity_curve'] = (daily_return['strategy_mean']+1).cumprod()
 
-    btc_pct = data[data['Instrument']=='BTCUSDT']
-    daily_return = daily_return.join(btc_pct['Pct'], how='outer')
 
     return daily_return
 
@@ -193,14 +150,6 @@ def dailyBackTest(data):
     
     daily_return.loc[:,'strategy_mean'] = daily_return.sum(axis=1)
     daily_return.loc[:,'equity_curve'] = (daily_return['strategy_mean']+1).cumprod()
-
-    tmp = data.set_index('Open time')
-    btc_pct = tmp[tmp['Instrument']=='BTCUSDT']
-    daily_return = daily_return.join(btc_pct['Pct'], how='outer')
-    daily_return.loc[:,'btc_curve'] = (1+daily_return['Pct']).cumprod()
-
-    #（equity_curve:美元衡量的绝对收益, relative_equity_curve:相对于btc的相对收益）
-    daily_return.loc[:,'relative_equity_curve'] = daily_return['equity_curve']/daily_return['btc_curve']
     
     #print(daily_return)
     return daily_return    
@@ -218,7 +167,7 @@ def calSharpe(data):
 
 def calIC(data):
     #print(data)
-    normal_ic = np.corrcoef(data['Raw_factor'].fillna(0), data['Pct'].fillna(0))
+    normal_ic = np.corrcoef(data['Raw_factor'].fillna(0), data['Pct'].shift(3).fillna(0))
     return normal_ic[0][1]
 
 
