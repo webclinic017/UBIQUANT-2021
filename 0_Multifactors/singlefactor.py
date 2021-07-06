@@ -12,13 +12,13 @@ from sklearn.linear_model import LinearRegression
 #In order to make the program faster, we can try to calculate the Beta first and write to CSV, and then read the csv in
 
 ############################ Define our factors ####################################### 
-def RSIIndividual(close: pd.Series, window_length: int):
+def RSIIndividual(close, window_length):
     '''
     相对强弱指数
     RSI = 上升平均数/(上升平均数+下跌平均数)*100%
     close.columns = ['Instrument', 'Close']
     '''
-    # close = data.loc[:, 'Close']
+    # close = data['Close']
     delta = close.diff()
     # delta = delta.fillna(0)
     up, down = delta.copy(), delta.copy()
@@ -29,7 +29,7 @@ def RSIIndividual(close: pd.Series, window_length: int):
     RS1 = roll_up1 / roll_down1
     RSI1 = 100.0 - (100.0 / (1.0 + RS1))
 
-    return RSI1
+    return -RSI1
 
 
 def SixDayRS(close, window_length: int):
@@ -39,6 +39,44 @@ def SixDayRS(close, window_length: int):
     rs = -close.pct_change(6)
     return rs
 
+def OpenCloseDiff(OCDiff, window_length):
+    '''
+    OCDiff指数平均
+    '''
+    OCDiff = np.abs(OCDiff)
+    OCDiff = OCDiff.rolling(window=window_length, min_periods=3).mean()
+    return -OCDiff
+
+def Size(price, window_length):
+    '''
+    OCDiff指数平均
+    '''
+    price = np.log(price)
+    price = price.rolling(window=window_length, min_periods=3).mean()
+    return -price
+
+
+def Volume(volume, window_length):
+    '''
+    OCDiff指数平均
+    '''
+    volume = np.log(volume)
+    volume = volume.rolling(window=window_length, min_periods=3).mean()
+    return -volume
+
+
+def VolumePct(volume, window_length):
+    '''
+    OCDiff指数平均
+    '''
+    v_pct = volume.pct_change(3)
+    v_pct = v_pct.rolling(window=window_length, min_periods=3).mean()
+    return -v_pct
+
+def Volatility(close, window_length):
+    pct = close.pct_change()
+    volatility = pct.rolling(window=window_length, min_periods=21).std()
+    return -volatility
 
 ############################ 去极值处理 #######################################
 # def Winsorize(factor: pd.Series, n=2):
@@ -100,63 +138,66 @@ if __name__ == "__main__":
                        names=['Date','Instrument','Open','High','Low','Close','Volume','Amount'])
 
     # 计算因子
-    strategies = {'RSI':RSIIndividual, 'SixDayRS': SixDayRS}
-    for factor_name, strategy in strategies.items():
+    strategies = {'RSI':RSIIndividual, 'SixDayRS':SixDayRS, 'OCDiff':OpenCloseDiff, \
+                  'Size':Size, 'Volume':Volume, 'VolumePct':VolumePct, 'Volatility':Volatility}
+    factor_name = 'SixDayRS'
+    strategy = strategies[factor_name]
 
-        data.loc[:, factor_name] = data.groupby('Instrument')['Close'].apply(strategy, (4))
-        # data.loc[:, factor_name] = data.groupby('Instrument')['Close'].apply(RSIIndividual, (4))
-        data.loc[:,factor_name] = data.groupby('Instrument')[factor_name].shift(2)
-        # data.fillna(0)
-        plt.figure()
-        plt.hist(data[factor_name])
-        plt.savefig('./singlefactor_figure/{}_factor.png'.format(factor_name))
+    # data.loc[:, factor_name] = data['Open']/data.groupby('Instrument')['Close'].shift(1)-1
+    data.loc[:, factor_name] = data.groupby('Instrument')['Close'].apply(strategy, (30))
+    data.loc[:,factor_name] = data.groupby('Instrument')[factor_name].shift(2)
 
-        data.loc[:, factor_name] = data.groupby('Instrument')[factor_name].apply(Winsorize, (2))    # 因子离群值处理
-        plt.figure()
-        plt.hist(data[factor_name])
-        plt.savefig('./singlefactor_figure/{}_factor_winsorized.png'.format(factor_name))
+    # data.fillna(0)
+    plt.figure()
+    plt.hist(data[factor_name])
+    plt.savefig('./singlefactor_figure/{}_factor.png'.format(factor_name))
 
-        data.loc[:, factor_name] = data.groupby('Date')[factor_name].apply(Standardlize)            # 因子标准化处理
-        plt.figure()
-        plt.hist(data[factor_name])
-        plt.savefig('./singlefactor_figure/{}_factor_standardized.png'.format(factor_name))
-        # print(data[data['Instrument']==6000])
-        # print(data[data['Instrument']==6001])
+    data.loc[:, factor_name] = data.groupby('Date')[factor_name].apply(Winsorize, (2))    # 因子离群值处理
+    plt.figure()
+    plt.hist(data[factor_name])
+    plt.savefig('./singlefactor_figure/{}_factor_winsorized.png'.format(factor_name))
 
-        # 资产的日收益率
-        data.loc[:,'Pct'] = data.groupby('Instrument')['Close'].pct_change(1)
+    data.loc[:, factor_name] = data.groupby('Date')[factor_name].apply(Standardlize)            # 因子标准化处理
+    plt.figure()
+    plt.hist(data[factor_name])
+    plt.savefig('./singlefactor_figure/{}_factor_standardized.png'.format(factor_name))
+    print(data[data['Instrument']==6000])
+    print(data[data['Instrument']==6499])
 
-        group = 10
-        pnl_record = []
-        data_list = np.sort(np.unique(data['Date'].values))
+    # 资产的日收益率
+    data.loc[:,'Pct'] = data.groupby('Instrument')['Close'].pct_change(1)
 
-        for date in data_list:
-            daily_data = data[data['Date']==date]
-            # print('date: ', date)
-            # print(daily_data)
-            # print(daily_data.loc[:,factor_name].isnull().any())
-            if daily_data[factor_name].isnull().any():
-                continue
-            num_of_stock = daily_data.shape[0]
-            _rank = daily_data.loc[:,factor_name].rank()
-            # print(_rank)
-            _buy = _rank>int((num_of_stock*9/10))
-            # print(_buy)
-            _sell = _rank<int((num_of_stock/10))
+    group = 10
+    pnl_record = []
+    data_list = np.sort(np.unique(data['Date'].values))
 
-            weight = 1/num_of_stock/2*10
-            # print(weight)
-            # print(daily_data.loc[_buy, 'Pct'])
-            daily_return = np.sum(daily_data.loc[_buy, 'Pct'])*weight - np.sum(daily_data.loc[_sell, 'Pct'])*weight
-            # print(daily_return)
+    for date in data_list:
+        daily_data = data[data['Date']==date]
+        # print('date: ', date)
+        # print(daily_data)
+        # print(daily_data.loc[:,factor_name].isnull().any())
+        if daily_data[factor_name].isnull().any():
+            continue
+        num_of_stock = daily_data.shape[0]
+        _rank = daily_data.loc[:,factor_name].rank()
+        # print(_rank)
+        _buy = _rank>int((num_of_stock*9/10))
+        # print(_buy)
+        _sell = _rank<int((num_of_stock/10))
 
-            pnl_record.append(daily_return)
-        
-        pnl = np.cumprod(1+np.array(pnl_record))-1
-        print('strategy: ', factor_name, '. total return: ', pnl[-1])
-        
-        # 画图
-        plt.figure()
-        plt.plot(pnl)
-        # plt.savefig(factor_name+'.png')
-        plt.savefig('./singlefactor_figure/{}_pnl.png'.format(factor_name))
+        weight = 1/num_of_stock/2*10
+        # print(weight)
+        # print(daily_data.loc[_buy, 'Pct'])
+        daily_return = np.sum(daily_data.loc[_buy, 'Pct'])*weight - np.sum(daily_data.loc[_sell, 'Pct'])*weight
+        # print(daily_return)
+
+        pnl_record.append(daily_return)
+    
+    pnl = np.cumprod(1+np.array(pnl_record))-1
+    print('strategy: ', factor_name, '. total return: ', pnl[-1])
+    
+    # 画图
+    plt.figure()
+    plt.plot(pnl)
+    # plt.savefig(factor_name+'.png')
+    plt.savefig('./singlefactor_figure/{}_pnl.png'.format(factor_name))
