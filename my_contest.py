@@ -188,7 +188,8 @@ while(True):
 
 
     # 以下不用管，是框架，以上是策略。
-
+    print(_pos)
+    print(len(_pos))
     send_positions(_pos ,stub,session_key,my_sequence)
 
 

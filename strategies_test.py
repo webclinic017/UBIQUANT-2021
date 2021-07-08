@@ -77,6 +77,7 @@ def try_to_save_time(_my_sequence, _stub2):
         response = get_data(_my_sequence,_stub2)
         
         if response.sequence == -1:
+            _my_sequence==0
             time.sleep(0.1)
             continue
         
@@ -225,68 +226,23 @@ while(True):
     # my_sequence += 1
     # print('my_sequence', my_sequence)
     # stub, session_key = initialize()
-    stub2 = question_pb2_grpc.QuestionStub(channel2)
-    # my_sequence += 1
-    # response = try_to_save_time(my_sequence, stub2)
-    response = get_data(my_sequence+1, stub2)
-    if response.sequence == -1:
-        time.sleep(0.2)
-        continue
+    # stub2 = question_pb2_grpc.QuestionStub(channel2)
+    my_sequence += 1
+    response = try_to_save_time(my_sequence, stub2)
+    # response = get_data(my_sequence+1, stub2)
+    # if response.sequence == -1:
+    #     time.sleep(0.2)
+    #     continue
 
     start =  time.time()
     not_end = response.has_next_question
-    my_sequence = response.sequence
+    # my_sequence = response.sequence
     cur_capital = response.capital
     print('current day: {}, current capital: {}......\n'.format(my_sequence, cur_capital))
 
-    daily_data = np.array([stock.values for stock in response.dailystk])
-    daily_data = daily_data[:, 0:8]
-    today_close = daily_data[:, 5]             # 当日收盘价
-    num_of_stock = daily_data.shape[0]
-    stock_list = np.arange(num_of_stock)
-
-    print(daily_data.shape)
-
-    # 每一支股票单独存在字典里
-    for i in range(num_of_stock):
-        data[i].append(daily_data[i])
-
-    if len(data[0]) >= 10:
-
-        with ProcessPoolExecutor() as executor:
-            futures = [executor.submit(mp_task, batch, data) for batch in stock_batch]
-            for future in as_completed(futures):
-                factors_batch = future.result()
-                for i in range(len(factors_batch)):
-                    _key, factors = factors_batch[i]
-                    # print(_key, factors)
-                    all_factors[_key] = factors
-
-        # print(all_factors)
-        print(len(all_factors))
-
-        all_factors = preprocessing.scale(np.array(all_factors))              # 按列z-score标准化
-
-        _rank = np.argsort(np.argsort(np.array(all_factors).mean(axis=1)))    # 0-499，多因子等权组合
-        _pos = np.array([0]*num_of_stock)
-        
-        _buy_line = num_of_stock-num_of_holding/2
-        _sell_line = num_of_holding/2
-        _pos[_rank>=_buy_line] = 1
-        _pos[_rank<_sell_line] = -1
-        
-        position = _pos * cur_capital * leverage / num_of_holding / today_close
-        position = list(position.astype(int))
-        print("len of position: ", len(position))
-        
-        stub, session_key = initialize()
-        # my_sequence = response.sequence
-        send_positions(position ,stub, session_key, my_sequence)
-
-        # 删除最老的一天的数据
-        for i in range(num_of_stock):
-            data[i].pop(0)
-        
-        use_time = time.time() - start
-        print("Time of posting position: %s", use_time)
-        time.sleep(max(4-use_time, 0.1))
+    position = [0]*num_of_stock
+    send_positions(position ,stub, session_key, my_sequence)
+    
+    use_time = time.time() - start
+    print("Time of posting position: %s", use_time)
+    time.sleep(max(4-use_time, 0.1))
