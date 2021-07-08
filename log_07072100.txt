@@ -1,0 +1,558 @@
+user_id: 67
+user_pin: "GkwB5rYqHu"
+session_key: "M0fQPn"
+init_capital: 521573091.43516564
+success: true
+
+connected to server...
+(500, 8)
+
+============================================================
+current day: 601, current capital: 521217003.13924265......
+
+(500, 8)
+
+============================================================
+current day: 602, current capital: 521348645.2406962......
+
+(500, 8)
+
+============================================================
+current day: 603, current capital: 520588488.7527142......
+
+(500, 8)
+
+============================================================
+current day: 604, current capital: 520387287.2545967......
+
+(500, 8)
+
+============================================================
+current day: 605, current capital: 519956313.9820731......
+
+(500, 8)
+
+============================================================
+current day: 606, current capital: 519956313.9820731......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  4
+---------------------------------------
+length of each factor:  4
+---------------------------------------
+length of each factor:  4
+---------------------------------------
+length of each factor:  4
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:605 answer timeout"
+
+amount of money spent: 519953272.74999994
+Time of posting position: %s 1.0637288093566895
+Time of caculating IC: %s 1.0637376308441162
+
+============================================================
+current day: 607, current capital: 518831826.47340924......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  8
+---------------------------------------
+length of each factor:  8
+---------------------------------------
+length of each factor:  8
+---------------------------------------
+length of each factor:  8
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:606 answer timeout"
+
+amount of money spent: 518827557.21999985
+Time of posting position: %s 0.9916205406188965
+Time of caculating IC: %s 0.9916267395019531
+
+============================================================
+current day: 608, current capital: 519335771.38519055......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  12
+---------------------------------------
+length of each factor:  12
+---------------------------------------
+length of each factor:  12
+---------------------------------------
+length of each factor:  12
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:607 answer timeout"
+
+amount of money spent: 519333026.14999974
+Time of posting position: %s 1.0445561408996582
+Time of caculating IC: %s 1.0445630550384521
+
+============================================================
+current day: 609, current capital: 517585186.12742877......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  16
+---------------------------------------
+length of each factor:  16
+---------------------------------------
+length of each factor:  16
+---------------------------------------
+length of each factor:  16
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:608 answer timeout"
+
+amount of money spent: 517580328.66999996
+Time of posting position: %s 2.0513906478881836
+Time of caculating IC: %s 2.0513999462127686
+
+============================================================
+current day: 610, current capital: 519943959.9010689......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  20
+---------------------------------------
+length of each factor:  20
+---------------------------------------
+length of each factor:  20
+---------------------------------------
+length of each factor:  20
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:609 answer timeout"
+
+amount of money spent: 519940716.25000006
+Time of posting position: %s 1.0437285900115967
+Time of caculating IC: %s 1.0437374114990234
+
+============================================================
+current day: 611, current capital: 519943959.9010689......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  24
+---------------------------------------
+length of each factor:  24
+---------------------------------------
+length of each factor:  24
+---------------------------------------
+length of each factor:  24
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:610 answer timeout"
+
+amount of money spent: 519940085.9600001
+Time of posting position: %s 1.1307649612426758
+Time of caculating IC: %s 1.1307730674743652
+
+============================================================
+current day: 612, current capital: 519903153.2451945......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  28
+---------------------------------------
+length of each factor:  28
+---------------------------------------
+length of each factor:  28
+---------------------------------------
+length of each factor:  28
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:611 answer timeout"
+
+amount of money spent: 519899117.43
+Time of posting position: %s 1.0169284343719482
+Time of caculating IC: %s 1.016937255859375
+
+============================================================
+current day: 613, current capital: 519903153.2451945......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  32
+---------------------------------------
+length of each factor:  32
+---------------------------------------
+length of each factor:  32
+---------------------------------------
+length of each factor:  32
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:612 answer timeout"
+
+amount of money spent: 519900476.24000007
+Time of posting position: %s 1.0421216487884521
+Time of caculating IC: %s 1.042130708694458
+
+============================================================
+current day: 614, current capital: 520738903.4065811......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  36
+---------------------------------------
+length of each factor:  36
+---------------------------------------
+length of each factor:  36
+---------------------------------------
+length of each factor:  36
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:613 answer timeout"
+
+amount of money spent: 520735921.69000006
+Time of posting position: %s 1.023756504058838
+Time of caculating IC: %s 1.0237650871276855
+
+============================================================
+current day: 615, current capital: 520055992.26024175......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  40
+---------------------------------------
+length of each factor:  40
+---------------------------------------
+length of each factor:  40
+---------------------------------------
+length of each factor:  40
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:614 answer timeout"
+
+amount of money spent: 520052501.43999994
+Time of posting position: %s 1.073758840560913
+Time of caculating IC: %s 1.0737671852111816
+
+============================================================
+current day: 616, current capital: 519124937.0160977......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  44
+---------------------------------------
+length of each factor:  44
+---------------------------------------
+length of each factor:  44
+---------------------------------------
+length of each factor:  44
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:615 answer timeout"
+
+amount of money spent: 519121046.00000006
+Time of posting position: %s 1.0259363651275635
+Time of caculating IC: %s 1.025942325592041
+
+============================================================
+current day: 617, current capital: 519394020.11783785......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  48
+---------------------------------------
+length of each factor:  48
+---------------------------------------
+length of each factor:  48
+---------------------------------------
+length of each factor:  48
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:616 answer timeout"
+
+amount of money spent: 519389690.72
+Time of posting position: %s 1.0708298683166504
+Time of caculating IC: %s 1.0708374977111816
+
+============================================================
+current day: 618, current capital: 519703643.69889694......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  52
+---------------------------------------
+length of each factor:  52
+---------------------------------------
+length of each factor:  52
+---------------------------------------
+length of each factor:  52
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:617 answer timeout"
+
+amount of money spent: 519699097.05999976
+Time of posting position: %s 2.0740840435028076
+Time of caculating IC: %s 2.0740926265716553
+
+============================================================
+current day: 619, current capital: 518998678.1709517......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  56
+---------------------------------------
+length of each factor:  56
+---------------------------------------
+length of each factor:  56
+---------------------------------------
+length of each factor:  56
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:618 answer timeout"
+
+amount of money spent: 518995901.4599999
+Time of posting position: %s 1.0242397785186768
+Time of caculating IC: %s 1.0242486000061035
+
+============================================================
+current day: 620, current capital: 518998678.1709517......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  60
+---------------------------------------
+length of each factor:  60
+---------------------------------------
+length of each factor:  60
+---------------------------------------
+length of each factor:  60
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:619 answer timeout"
+
+amount of money spent: 518995871.42
+Time of posting position: %s 1.032442331314087
+Time of caculating IC: %s 1.0324506759643555
+
+============================================================
+current day: 621, current capital: 518379365.70419896......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  64
+---------------------------------------
+length of each factor:  64
+---------------------------------------
+length of each factor:  64
+---------------------------------------
+length of each factor:  64
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:620 answer timeout"
+
+amount of money spent: 518376242.18999994
+Time of posting position: %s 1.037647008895874
+Time of caculating IC: %s 1.0376558303833008
+
+============================================================
+current day: 622, current capital: 518283500.3907635......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  68
+---------------------------------------
+length of each factor:  68
+---------------------------------------
+length of each factor:  68
+---------------------------------------
+length of each factor:  68
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:621 answer timeout"
+
+amount of money spent: 518280280.91999984
+Time of posting position: %s 1.0507276058197021
+Time of caculating IC: %s 1.0507352352142334
+
+============================================================
+current day: 623, current capital: 517181594.54150873......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  72
+---------------------------------------
+length of each factor:  72
+---------------------------------------
+length of each factor:  72
+---------------------------------------
+length of each factor:  72
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:622 answer timeout"
+
+amount of money spent: 517178365.0899999
+Time of posting position: %s 1.0205132961273193
+Time of caculating IC: %s 1.0205192565917969
+
+============================================================
+current day: 624, current capital: 515773782.11162853......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  76
+---------------------------------------
+length of each factor:  76
+---------------------------------------
+length of each factor:  76
+---------------------------------------
+length of each factor:  76
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:623 answer timeout"
+
+amount of money spent: 515770032.06
+Time of posting position: %s 1.0270891189575195
+Time of caculating IC: %s 1.0270960330963135
+
+============================================================
+current day: 625, current capital: 516463832.0366426......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  80
+---------------------------------------
+length of each factor:  80
+---------------------------------------
+length of each factor:  80
+---------------------------------------
+length of each factor:  80
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:624 answer timeout"
+
+amount of money spent: 516460155.5099998
+Time of posting position: %s 1.5301430225372314
+Time of caculating IC: %s 1.5301539897918701
+
+============================================================
+current day: 626, current capital: 517738397.02053326......
+
+(500, 8)
+shape of one day close:  (500, 6)
+shape of one day close:  (500, 6)
+SixDayRS 1
+Size 2
+VolumePct 3
+RSI 0
+how many factors:  4
+length of each factor:  84
+---------------------------------------
+length of each factor:  84
+---------------------------------------
+length of each factor:  84
+---------------------------------------
+length of each factor:  84
+---------------------------------------
+reason: "FATAL ERROR: User_id:67 Sequence:625 answer timeout"
+
+amount of money spent: 517735671.78000003
+Time of posting position: %s 1.0402863025665283
+Time of caculating IC: %s 1.040295124053955

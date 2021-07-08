@@ -1,0 +1,6619 @@
+user_id: 67
+user_pin: "GkwB5rYqHu"
+session_key: "DmuzE8"
+init_capital: 445529985.68469685
+success: true
+
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 520, current capital: 445529985.68469685......
+
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 521, current capital: 438457693.4840527......
+
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 522, current capital: 438457693.4840527......
+
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 523, current capital: 437450815.97612643......
+
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 524, current capital: 439321632.047708......
+
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 525, current capital: 439321632.047708......
+
+{'Size', 'Pct'}
+accepted: true
+
+amount of money spent: 439312328.68
+Time of posting position: %s 1.7558701038360596
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 526, current capital: 438337405.8251005......
+
+{'Size', 'VolumePct', 'Pct'}
+accepted: true
+
+amount of money spent: 438330503.98
+Time of posting position: %s 1.7687478065490723
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 527, current capital: 437875491.0805734......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 437871646.65999997
+Time of posting position: %s 2.204432249069214
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 528, current capital: 436052654.92579865......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 436047941.70999986
+Time of posting position: %s 1.8068115711212158
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 529, current capital: 434440317.8265457......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 434434668.9599999
+Time of posting position: %s 1.8232746124267578
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 530, current capital: 436037372.9153404......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 436033083.6899999
+Time of posting position: %s 1.8678510189056396
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 531, current capital: 436037372.9153404......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 436032095.40999997
+Time of posting position: %s 2.2929389476776123
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 532, current capital: 436764797.26462716......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 436760832.1699999
+Time of posting position: %s 1.875823736190796
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 533, current capital: 435917973.4956482......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 435911750.07
+Time of posting position: %s 1.9205856323242188
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 534, current capital: 433601006.4698994......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 433594461.1800001
+Time of posting position: %s 1.9175522327423096
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 535, current capital: 432344584.26065844......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 432336923.73
+Time of posting position: %s 1.934272050857544
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 536, current capital: 432344584.26065844......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 432338183.0099999
+Time of posting position: %s 1.9740638732910156
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 537, current capital: 434038616.3191279......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 434033304.8099998
+Time of posting position: %s 1.9699859619140625
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 538, current capital: 434038616.3191279......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 434034506.36
+Time of posting position: %s 2.008639335632324
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 539, current capital: 432773297.3577919......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 432767158.64999986
+Time of posting position: %s 2.029888391494751
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 540, current capital: 431037825.66102993......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 431032962.88000005
+Time of posting position: %s 2.021169424057007
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 541, current capital: 431037825.66102993......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 431033885.3100001
+Time of posting position: %s 2.03964900970459
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 542, current capital: 431455017.2831476......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 431450598.8200002
+Time of posting position: %s 2.0823912620544434
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 543, current capital: 433279350.1493584......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 433276102.52000004
+Time of posting position: %s 2.077467441558838
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 544, current capital: 430945711.0154232......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 430939878.2499998
+Time of posting position: %s 2.0958473682403564
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 545, current capital: 428321693.7889312......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 428317458.00000006
+Time of posting position: %s 2.134934902191162
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 546, current capital: 428321693.7889312......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 428317936.66
+Time of posting position: %s 2.2119710445404053
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 547, current capital: 428233186.4410188......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 428229856.63000005
+Time of posting position: %s 2.1540687084198
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 548, current capital: 428652768.0606319......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 428648897.86000013
+Time of posting position: %s 2.1972055435180664
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 549, current capital: 427395888.6774308......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 427391102.6700001
+Time of posting position: %s 2.190129280090332
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 550, current capital: 427395888.6774308......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 427390457.58999985
+Time of posting position: %s 2.2092831134796143
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 551, current capital: 426236238.8627321......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 426232980.21000004
+Time of posting position: %s 2.2536680698394775
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 552, current capital: 423952430.93405765......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 423946048.9799999
+Time of posting position: %s 2.2429983615875244
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 553, current capital: 423952430.93405765......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 423948702.31
+Time of posting position: %s 2.3300368785858154
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 554, current capital: 422770132.53562874......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 422766724.80000013
+Time of posting position: %s 2.3255226612091064
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 555, current capital: 421106301.34740996......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 421101376.0699999
+Time of posting position: %s 2.3401412963867188
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 556, current capital: 421130714.4395637......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 421127003.6899999
+Time of posting position: %s 2.3561055660247803
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 557, current capital: 422586535.61302274......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 422582305.5899999
+Time of posting position: %s 2.4052414894104004
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 558, current capital: 420856887.2095649......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 420852364.63
+Time of posting position: %s 3.0829153060913086
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 559, current capital: 421192838.6095217......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 421188713.17000014
+Time of posting position: %s 2.440878391265869
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 560, current capital: 415084137.14164597......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 415078556.3800002
+Time of posting position: %s 2.429739475250244
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 561, current capital: 414242446.37290937......
+
+{'Size', 'VolumePct', 'Pct'}
+accepted: true
+
+amount of money spent: 414237838.21000004
+Time of posting position: %s 2.445528745651245
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 562, current capital: 412944615.92338234......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 412940411.72
+Time of posting position: %s 2.4921295642852783
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 563, current capital: 412850430.9915157......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 412845751.75999993
+Time of posting position: %s 2.4853837490081787
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 564, current capital: 412495771.17599714......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 412490712.46999997
+Time of posting position: %s 2.502734899520874
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 565, current capital: 412141089.36436355......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 412137331.3300003
+Time of posting position: %s 2.553582191467285
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 566, current capital: 410877273.07714856......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 410872323.6800001
+Time of posting position: %s 2.540374517440796
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 567, current capital: 408381637.36093485......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 408375963.2399999
+Time of posting position: %s 2.5866503715515137
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 568, current capital: 407704897.23396504......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 407700278.4999999
+Time of posting position: %s 2.5727343559265137
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 569, current capital: 407234102.35347855......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 407228948.6499999
+Time of posting position: %s 2.9424233436584473
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 570, current capital: 407924147.480042......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 407919072.22999996
+Time of posting position: %s 2.6068966388702393
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 571, current capital: 407732034.8563368......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 407727479.73
+Time of posting position: %s 2.598353385925293
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 572, current capital: 405767953.91444......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 405762127.98999983
+Time of posting position: %s 2.6426444053649902
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 573, current capital: 403291041.3042261......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 403284705.37
+Time of posting position: %s 2.6429545879364014
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 574, current capital: 401103729.66846776......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 401097743.2499999
+Time of posting position: %s 2.6475741863250732
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 575, current capital: 401674401.18666214......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 401669222.08999974
+Time of posting position: %s 2.6938486099243164
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 576, current capital: 401674401.18666214......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 401668411.75999993
+Time of posting position: %s 2.6873576641082764
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 577, current capital: 397979063.0260315......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 397974667.6399998
+Time of posting position: %s 2.7440037727355957
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 578, current capital: 397979063.0260315......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 397974870.0400001
+Time of posting position: %s 2.7247395515441895
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 579, current capital: 398815411.9870343......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 398810466.91999984
+Time of posting position: %s 2.620601177215576
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 580, current capital: 398750103.9303708......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 398744069.7099998
+Time of posting position: %s 2.600562334060669
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 581, current capital: 398141464.2606661......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 398136381.47999984
+Time of posting position: %s 2.612684488296509
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 582, current capital: 398857725.7021639......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 398854375.0500001
+Time of posting position: %s 2.6581833362579346
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 583, current capital: 397772194.1525962......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 397767528.92
+Time of posting position: %s 2.6329870223999023
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 584, current capital: 396332796.20726556......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 396327734.48999995
+Time of posting position: %s 3.1866772174835205
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 585, current capital: 396966478.86019635......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 396959395.24999994
+Time of posting position: %s 2.66176438331604
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 586, current capital: 394921045.6253649......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 394915655.62000024
+Time of posting position: %s 2.664336681365967
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 587, current capital: 396006624.7059734......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 396001582.96
+Time of posting position: %s 2.701422929763794
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 588, current capital: 396435296.2858599......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 396430916.23
+Time of posting position: %s 2.688157320022583
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 589, current capital: 401782369.1419661......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 401777409.0200001
+Time of posting position: %s 2.7263665199279785
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 590, current capital: 398859742.45038027......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 398855361.50000006
+Time of posting position: %s 2.7060179710388184
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 591, current capital: 398859742.45038027......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 398856302.4599999
+Time of posting position: %s 2.752835988998413
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 592, current capital: 398759547.23001593......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 398754055.03000003
+Time of posting position: %s 2.7415432929992676
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 593, current capital: 397437637.41971993......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 397433055.67999977
+Time of posting position: %s 2.7623934745788574
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 594, current capital: 397754575.2420506......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 397749517.7499999
+Time of posting position: %s 2.7463910579681396
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 595, current capital: 397575705.6859015......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 397572447.3300001
+Time of posting position: %s 3.270766258239746
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 596, current capital: 393366669.10186297......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 393362206.06000006
+Time of posting position: %s 2.796140432357788
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 597, current capital: 393895829.2391644......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 393891138.65999997
+Time of posting position: %s 2.781979560852051
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 598, current capital: 393895829.2391644......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 393890822.12
+Time of posting position: %s 2.8186962604522705
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 599, current capital: 392119638.6492184......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 392116246.95000005
+Time of posting position: %s 3.747887372970581
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 600, current capital: 390590967.16911066......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 390585925.0100001
+Time of posting position: %s 2.8154611587524414
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 601, current capital: 384861260.7795623......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384855431.25999993
+Time of posting position: %s 2.854302167892456
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 602, current capital: 384861260.7795623......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384856796.37000006
+Time of posting position: %s 2.8314144611358643
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 603, current capital: 384382489.8860724......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384378699.68
+Time of posting position: %s 2.8848986625671387
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 604, current capital: 384382489.8860724......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384378191.79000026
+Time of posting position: %s 2.862351894378662
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 605, current capital: 384865863.7616913......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384861605.31000024
+Time of posting position: %s 2.8946027755737305
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 606, current capital: 384686489.0157537......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384682058.81999993
+Time of posting position: %s 2.8735883235931396
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 607, current capital: 384795497.52770114......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384791211.56000024
+Time of posting position: %s 2.9237613677978516
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 608, current capital: 384795497.52770114......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384790973.5700002
+Time of posting position: %s 2.932046890258789
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 609, current capital: 384957967.42925906......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384953258.43000007
+Time of posting position: %s 2.907430410385132
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 610, current capital: 384480550.0308412......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 384475052.58000016
+Time of posting position: %s 3.9102115631103516
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 611, current capital: 383173785.52785724......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 383170385.58
+Time of posting position: %s 2.932018518447876
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 612, current capital: 382349423.1279135......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 382344814.3500001
+Time of posting position: %s 2.978182554244995
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 613, current capital: 382349423.1279135......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 382345160.4100001
+Time of posting position: %s 2.9569482803344727
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 614, current capital: 382150909.6082417......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 382145342.23999995
+Time of posting position: %s 3.864708423614502
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 615, current capital: 381115264.3292813......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 381110470.0400001
+Time of posting position: %s 2.975822687149048
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 616, current capital: 378368092.10906845......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 378363346.25
+Time of posting position: %s 3.014711618423462
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 617, current capital: 378368092.10906845......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 378364458.56
+Time of posting position: %s 2.9942562580108643
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 618, current capital: 378478447.20800555......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 378474002.79999995
+Time of posting position: %s 4.02553653717041
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 619, current capital: 379329955.9895429......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 379324772.7900001
+Time of posting position: %s 3.0245184898376465
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 620, current capital: 379329955.9895429......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 379326513.3999998
+Time of posting position: %s 3.068268299102783
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 621, current capital: 379902097.85849166......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 379898045.9900001
+Time of posting position: %s 3.04636812210083
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 622, current capital: 379902097.85849166......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 379898269.0799998
+Time of posting position: %s 3.1020309925079346
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 623, current capital: 379268570.1575459......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 379263712.13000005
+Time of posting position: %s 3.0638396739959717
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 624, current capital: 378762940.7707553......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 378758164.65
+Time of posting position: %s 3.105987787246704
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 625, current capital: 378475020.5641433......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 378471299.87999994
+Time of posting position: %s 3.7307426929473877
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 626, current capital: 377735295.49380517......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 377730379.16999996
+Time of posting position: %s 3.1304683685302734
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 627, current capital: 377735295.49380517......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 377730505.61
+Time of posting position: %s 3.1111812591552734
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 628, current capital: 377745533.77070814......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 377741058.85000026
+Time of posting position: %s 3.139596462249756
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 629, current capital: 376183765.9135113......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 376180849.48999983
+Time of posting position: %s 3.7028157711029053
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 630, current capital: 376950710.96665573......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 376946675.8399999
+Time of posting position: %s 3.1560287475585938
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 631, current capital: 375893027.57260513......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 375888734.23
+Time of posting position: %s 3.1528773307800293
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 632, current capital: 375893027.57260513......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 375888851.6799998
+Time of posting position: %s 3.179746150970459
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 633, current capital: 376116596.6508095......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 376112626.6199999
+Time of posting position: %s 3.8673386573791504
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 634, current capital: 374392058.3201413......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 374388078.10999995
+Time of posting position: %s 3.1695148944854736
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 635, current capital: 374392058.3201413......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 374386452.3399999
+Time of posting position: %s 3.1518423557281494
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 636, current capital: 373889826.3586923......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 373886630.43000007
+Time of posting position: %s 3.1812987327575684
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 637, current capital: 374539620.4416065......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 374535885.2799998
+Time of posting position: %s 3.8484036922454834
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 638, current capital: 374750146.8930157......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 374744663.14000005
+Time of posting position: %s 3.2029430866241455
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 639, current capital: 372324982.252975......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 372321029.43
+Time of posting position: %s 3.189821720123291
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 640, current capital: 372324982.252975......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 372319479.09
+Time of posting position: %s 3.2284092903137207
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 641, current capital: 373739013.13070697......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 373733601.09
+Time of posting position: %s 3.9609460830688477
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 642, current capital: 374667390.0461386......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 374662126.14000016
+Time of posting position: %s 3.2467517852783203
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 643, current capital: 373720361.8015423......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 373715612.3200001
+Time of posting position: %s 3.2351717948913574
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 644, current capital: 374326292.53488594......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 374321616.0999999
+Time of posting position: %s 3.263948917388916
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 645, current capital: 374167509.21463907......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 374162684.0899999
+Time of posting position: %s 3.2605488300323486
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 646, current capital: 372163725.7361405......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 372158429.7299999
+Time of posting position: %s 3.2992451190948486
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 647, current capital: 372163725.7361405......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 372159467.3600001
+Time of posting position: %s 3.266831159591675
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 648, current capital: 372515356.8846212......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 372511935.15000004
+Time of posting position: %s 3.9562463760375977
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 649, current capital: 372542399.2725312......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 372538431.8700003
+Time of posting position: %s 3.325312376022339
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 650, current capital: 372732725.7804415......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 372727764.56
+Time of posting position: %s 3.296523332595825
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 651, current capital: 372112766.3011445......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 372109012.7399999
+Time of posting position: %s 3.336674690246582
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 652, current capital: 372116661.9645767......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:652 answer timeout"
+
+amount of money spent: 372111581.57
+Time of posting position: %s 4.08322286605835
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 653, current capital: 370964404.9791845......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 370960712.84000003
+Time of posting position: %s 3.3687264919281006
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 654, current capital: 370255559.40028304......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 370250916.7400003
+Time of posting position: %s 3.3435328006744385
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 655, current capital: 369537984.3657534......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 369533494.8999999
+Time of posting position: %s 3.5983216762542725
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 656, current capital: 369285465.8437516......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 369281007.0699999
+Time of posting position: %s 3.363325834274292
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 657, current capital: 369285465.8437516......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 369280495.74
+Time of posting position: %s 3.405590534210205
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 658, current capital: 370486788.75190103......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 370481635.3400001
+Time of posting position: %s 3.4130451679229736
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 659, current capital: 371059287.3525995......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 371055232.39000005
+Time of posting position: %s 3.7680270671844482
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 660, current capital: 369500085.3606468......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 369496357.85999995
+Time of posting position: %s 3.428687334060669
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 661, current capital: 367860649.8902591......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 367856971.96000004
+Time of posting position: %s 3.418741226196289
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 662, current capital: 367860649.8902591......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 367856687.3899998
+Time of posting position: %s 3.4497828483581543
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 663, current capital: 367358022.68682......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 367354084.4099999
+Time of posting position: %s 4.042629241943359
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 664, current capital: 369016722.01445407......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 369012687.45000017
+Time of posting position: %s 3.512371063232422
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 665, current capital: 368130774.6797517......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 368126742.42999995
+Time of posting position: %s 3.4986572265625
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 666, current capital: 368914322.6692486......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 368910090.80000013
+Time of posting position: %s 3.535247325897217
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 667, current capital: 368895890.6730156......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 368891552.32
+Time of posting position: %s 3.5116655826568604
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 668, current capital: 368073589.504285......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 368069299.04000014
+Time of posting position: %s 3.5529215335845947
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 669, current capital: 368073589.504285......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 368069302.22
+Time of posting position: %s 3.5356178283691406
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 670, current capital: 367111547.5312327......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 367106229.87999994
+Time of posting position: %s 3.9576151371002197
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 671, current capital: 367026632.37544316......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 367023836.12000006
+Time of posting position: %s 3.5180904865264893
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 672, current capital: 367036754.4882542......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 367033092.5199999
+Time of posting position: %s 3.56496262550354
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 673, current capital: 366625395.31751144......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 366619454.99000007
+Time of posting position: %s 3.5383222103118896
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 674, current capital: 364819089.50046957......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 364816464.84
+Time of posting position: %s 3.858499050140381
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 675, current capital: 365261253.3009189......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 365257021.50999993
+Time of posting position: %s 3.5901217460632324
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 676, current capital: 365028229.1020255......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 365024695.8700001
+Time of posting position: %s 3.577559471130371
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 677, current capital: 365084159.44964665......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 365079086.7399999
+Time of posting position: %s 3.612367630004883
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 678, current capital: 364712732.215312......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 364709788.95999986
+Time of posting position: %s 3.597842216491699
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 679, current capital: 364712732.215312......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 364707974.25000006
+Time of posting position: %s 3.631204605102539
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 680, current capital: 364191698.31660306......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 364187235.97
+Time of posting position: %s 3.617675304412842
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 681, current capital: 364695618.3773213......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:681 answer timeout"
+
+amount of money spent: 364690941.3999998
+Time of posting position: %s 4.152983665466309
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 682, current capital: 363469940.0554004......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 363465001.25999993
+Time of posting position: %s 3.6396758556365967
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 683, current capital: 363823493.4413935......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 363819067.98
+Time of posting position: %s 3.6798348426818848
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 684, current capital: 363407255.1648059......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 363402691.96000004
+Time of posting position: %s 3.661803960800171
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 685, current capital: 362650332.487849......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 362646453.49999994
+Time of posting position: %s 3.7777187824249268
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 686, current capital: 362650332.487849......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 362646114.5799999
+Time of posting position: %s 3.7557337284088135
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 687, current capital: 363061155.1900589......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 363057780.91999996
+Time of posting position: %s 3.794157028198242
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 688, current capital: 362512340.4493248......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 362508370.3899999
+Time of posting position: %s 3.7612905502319336
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 689, current capital: 363326167.2860831......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 363321238.67
+Time of posting position: %s 3.8133106231689453
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 690, current capital: 360509824.04774904......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 360505453.4599999
+Time of posting position: %s 3.7905802726745605
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 691, current capital: 360509824.04774904......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 360506869.43000007
+Time of posting position: %s 3.8264341354370117
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 692, current capital: 359661666.6925066......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 359658819.8799998
+Time of posting position: %s 4.058269739151001
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 693, current capital: 358246112.4860951......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 358240937.3
+Time of posting position: %s 3.855013608932495
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 694, current capital: 358246112.4860951......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 358241451.49
+Time of posting position: %s 3.8324270248413086
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 695, current capital: 357383762.44626665......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 357380031.95
+Time of posting position: %s 3.8707799911499023
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 696, current capital: 356513608.8661791......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 356509238.23000014
+Time of posting position: %s 3.859508752822876
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 697, current capital: 355669446.2718974......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 355665575.11999995
+Time of posting position: %s 3.8846137523651123
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 698, current capital: 355669446.2718974......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 355666120.0299998
+Time of posting position: %s 3.870431900024414
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 699, current capital: 354666205.90516484......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 354661235.34000003
+Time of posting position: %s 3.910475015640259
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 700, current capital: 354666205.90516484......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 354661670.51
+Time of posting position: %s 3.826653003692627
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 701, current capital: 354661375.3454141......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 354657263.8300001
+Time of posting position: %s 3.859113931655884
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 702, current capital: 355226503.74412185......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 355222802.53
+Time of posting position: %s 3.857916831970215
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 703, current capital: 358842583.1191062......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 358838781.34000015
+Time of posting position: %s 4.1318206787109375
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 704, current capital: 357419528.8133597......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 357415591.56999993
+Time of posting position: %s 3.8785433769226074
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 705, current capital: 357017340.32892495......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 357013720.03999984
+Time of posting position: %s 3.906611680984497
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 706, current capital: 357190736.7613164......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 357186430.28999996
+Time of posting position: %s 3.9218661785125732
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 707, current capital: 355949070.962764......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 355944824.5900001
+Time of posting position: %s 4.746780157089233
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 708, current capital: 356463649.16743034......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 356458515.86999995
+Time of posting position: %s 3.940420627593994
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 709, current capital: 354847799.79577386......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 354842591.9499999
+Time of posting position: %s 3.928584575653076
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 710, current capital: 353949491.32389313......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 353945853.71000016
+Time of posting position: %s 3.9651401042938232
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 711, current capital: 354734854.5980997......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 354730660.9699999
+Time of posting position: %s 4.001024484634399
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 712, current capital: 355761046.00730455......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 355757121.47
+Time of posting position: %s 3.947435140609741
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 713, current capital: 356150907.5149948......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 356147541.53
+Time of posting position: %s 3.99277400970459
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 714, current capital: 354679390.23972714......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 354674722.95000005
+Time of posting position: %s 4.2447144985198975
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 715, current capital: 353785560.6148612......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 353782525.63
+Time of posting position: %s 3.9818530082702637
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 716, current capital: 353757498.26404524......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 353753626.91999996
+Time of posting position: %s 4.022867202758789
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 717, current capital: 353351379.69099516......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 353347645.21000004
+Time of posting position: %s 4.009048223495483
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 718, current capital: 352908646.5129828......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 352903906.10999995
+Time of posting position: %s 4.059706926345825
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 719, current capital: 352252925.455411......
+
+{'Mom', 'Size', 'Pct'}
+accepted: true
+
+amount of money spent: 352247495.9799999
+Time of posting position: %s 4.054975748062134
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 720, current capital: 350850375.8861178......
+
+{'Mom', 'Size', 'Pct'}
+accepted: true
+
+amount of money spent: 350846811.0999999
+Time of posting position: %s 4.059174537658691
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 721, current capital: 351382009.6879035......
+
+{'Mom', 'Size', 'Pct'}
+accepted: true
+
+amount of money spent: 351376750.98
+Time of posting position: %s 4.196463584899902
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 722, current capital: 350048053.24079525......
+
+{'Mom', 'Size', 'Pct'}
+accepted: true
+
+amount of money spent: 350043805.40000015
+Time of posting position: %s 4.108121395111084
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 723, current capital: 349370910.46983474......
+
+{'Mom', 'Size', 'Pct'}
+accepted: true
+
+amount of money spent: 349367522.2100001
+Time of posting position: %s 4.0963897705078125
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 724, current capital: 349636979.41128135......
+
+{'Mom', 'Size', 'Pct'}
+accepted: true
+
+amount of money spent: 349632693.0999999
+Time of posting position: %s 4.126366138458252
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 725, current capital: 350680954.11508995......
+
+{'Mom', 'Size', 'Pct'}
+accepted: true
+
+amount of money spent: 350677260.11000025
+Time of posting position: %s 4.143027305603027
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 726, current capital: 350449384.12697417......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 350443984.1099999
+Time of posting position: %s 4.127451419830322
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 727, current capital: 350736121.47341055......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 350730943.41000015
+Time of posting position: %s 4.168006658554077
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 728, current capital: 350600894.56781614......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 354102704.93
+Time of posting position: %s 4.222074031829834
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 729, current capital: 349752122.4481107......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 349748844.43
+Time of posting position: %s 4.173616409301758
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 730, current capital: 348675677.70978266......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 348669949.17
+Time of posting position: %s 4.194024085998535
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 731, current capital: 346474523.68239534......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 346470523.63999987
+Time of posting position: %s 4.171807289123535
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 732, current capital: 345966170.52411634......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 345962070.04000014
+Time of posting position: %s 4.220551013946533
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 733, current capital: 345707818.8292463......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 345703393.0000001
+Time of posting position: %s 4.2210211753845215
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 734, current capital: 344858056.4549287......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 344854079.04
+Time of posting position: %s 4.220097064971924
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 735, current capital: 345120383.8748331......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 345116841.16999996
+Time of posting position: %s 4.249751091003418
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 736, current capital: 343858319.92052853......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 343853494.73000014
+Time of posting position: %s 4.279089689254761
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 737, current capital: 344170608.0270057......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 344165534.0300001
+Time of posting position: %s 4.24684476852417
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 738, current capital: 343654784.2711785......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 343651158.61
+Time of posting position: %s 4.357195138931274
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 739, current capital: 343469200.5401506......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 343465014.64
+Time of posting position: %s 4.351659059524536
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 740, current capital: 342734319.307121......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 342730178.62000006
+Time of posting position: %s 4.419405698776245
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 741, current capital: 340974761.32129794......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 340969943.11000013
+Time of posting position: %s 4.403067588806152
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 742, current capital: 340457984.71869576......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 340454522.6900001
+Time of posting position: %s 4.367169380187988
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 743, current capital: 339875392.5785692......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339871175.2799999
+Time of posting position: %s 4.415443658828735
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 744, current capital: 339087751.03478444......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339084376.35000014
+Time of posting position: %s 4.439374923706055
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 745, current capital: 338129280.7468645......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 338125883.5500001
+Time of posting position: %s 4.401126384735107
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 746, current capital: 338985528.60977864......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 338982193.2499999
+Time of posting position: %s 4.448209285736084
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 747, current capital: 339414934.33393514......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:747 answer timeout"
+
+amount of money spent: 339411528.1999998
+Time of posting position: %s 5.318636655807495
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 748, current capital: 339319415.84735394......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339316174.22000015
+Time of posting position: %s 4.435613393783569
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 749, current capital: 340287784.8018394......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 340281907.37
+Time of posting position: %s 4.485914707183838
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 750, current capital: 339914396.8246108......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339908937.15000004
+Time of posting position: %s 4.48248028755188
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 751, current capital: 339296598.02423036......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339292200.9799999
+Time of posting position: %s 4.494418144226074
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 752, current capital: 340233986.2175081......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 340229756.28999996
+Time of posting position: %s 4.43432092666626
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 753, current capital: 339899552.9690543......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339895687.24999994
+Time of posting position: %s 4.442263841629028
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 754, current capital: 339899552.9690543......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:754 answer timeout"
+
+amount of money spent: 339893371.54999995
+Time of posting position: %s 5.350651502609253
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 755, current capital: 340136322.88352185......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 340132432.09
+Time of posting position: %s 4.4619011878967285
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 756, current capital: 339487113.4960328......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339483084.2199999
+Time of posting position: %s 4.490553617477417
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 757, current capital: 339683532.0368585......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339679642.87999994
+Time of posting position: %s 4.468403577804565
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 758, current capital: 340346560.0766083......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 340342236.7099999
+Time of posting position: %s 4.52602219581604
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 759, current capital: 339895154.48020315......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339891797.24
+Time of posting position: %s 4.522393226623535
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 760, current capital: 339149831.06914365......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339146855.23000014
+Time of posting position: %s 4.489516258239746
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 761, current capital: 339584905.90582955......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:761 answer timeout"
+
+amount of money spent: 339581252.81000006
+Time of posting position: %s 5.032376289367676
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 762, current capital: 339795912.61477846......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339792233.40999997
+Time of posting position: %s 4.535672903060913
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 763, current capital: 340367184.19197786......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 340362987.32
+Time of posting position: %s 4.537067174911499
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 764, current capital: 339455978.3840486......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 339451483.72000015
+Time of posting position: %s 4.5819573402404785
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 765, current capital: 339067213.24925256......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:765 answer timeout"
+
+amount of money spent: 339062763.17999995
+Time of posting position: %s 5.6522440910339355
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 766, current capital: 338844031.97353464......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 338839367.18999994
+Time of posting position: %s 4.566459655761719
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 767, current capital: 338903255.0655184......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 338899906.8099999
+Time of posting position: %s 4.600547790527344
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 768, current capital: 338771426.90402466......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 338766683.77000016
+Time of posting position: %s 4.61185359954834
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 769, current capital: 338208997.8738126......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 338205064.95000017
+Time of posting position: %s 4.626875877380371
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 770, current capital: 337936412.81442547......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 337932771.4599999
+Time of posting position: %s 4.622833013534546
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 771, current capital: 337868890.4870653......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 337864845.9199999
+Time of posting position: %s 4.648595809936523
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 772, current capital: 338060356.1097916......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 338055589.0700001
+Time of posting position: %s 4.622570037841797
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 773, current capital: 337462594.84442574......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 337458112.93000025
+Time of posting position: %s 4.675060033798218
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 774, current capital: 337084805.136979......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 337079672.6300002
+Time of posting position: %s 4.6687915325164795
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 775, current capital: 337427292.8409349......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 337421870.21
+Time of posting position: %s 4.6559669971466064
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 776, current capital: 336232513.3936773......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 336226922.05999994
+Time of posting position: %s 4.704583406448364
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 777, current capital: 335091800.2893534......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:777 answer timeout"
+
+amount of money spent: 335086680.08000016
+Time of posting position: %s 5.611510276794434
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 778, current capital: 334879033.6646336......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 334874687.0700001
+Time of posting position: %s 4.689228773117065
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 779, current capital: 335301314.20400655......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 335297640.6199999
+Time of posting position: %s 4.735387325286865
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 780, current capital: 335619447.350331......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 335615507.7099999
+Time of posting position: %s 4.733371257781982
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 781, current capital: 335420322.6583405......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:781 answer timeout"
+
+amount of money spent: 335416569.84999996
+Time of posting position: %s 5.667147874832153
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 782, current capital: 333211851.4631854......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 333208085.1099999
+Time of posting position: %s 4.73829460144043
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 783, current capital: 333704533.4148164......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 333701000.7699999
+Time of posting position: %s 4.731722354888916
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 784, current capital: 333525282.4780055......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 333520934.6000001
+Time of posting position: %s 4.76074481010437
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 785, current capital: 333084056.411996......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+accepted: true
+
+amount of money spent: 333078705.4099999
+Time of posting position: %s 4.792882919311523
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 786, current capital: 334225584.3316131......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:786 answer timeout"
+
+amount of money spent: 334220430.62
+Time of posting position: %s 4.804403781890869
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 787, current capital: 333064077.0318781......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:787 answer timeout"
+
+amount of money spent: 333059589.78
+Time of posting position: %s 4.794249057769775
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 788, current capital: 333091465.6301394......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:788 answer timeout"
+
+amount of money spent: 333087135.20000005
+Time of posting position: %s 4.8171045780181885
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 789, current capital: 334360647.0148282......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:789 answer timeout"
+
+amount of money spent: 334356469.41
+Time of posting position: %s 4.869627237319946
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 790, current capital: 333404971.6747952......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:790 answer timeout"
+
+amount of money spent: 333400897.4700001
+Time of posting position: %s 4.812622547149658
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 791, current capital: 333330544.6065006......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:791 answer timeout"
+
+amount of money spent: 333326470.0800001
+Time of posting position: %s 4.856614112854004
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 792, current capital: 333391223.2695937......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:792 answer timeout"
+
+amount of money spent: 333387679.65999997
+Time of posting position: %s 5.63104248046875
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 793, current capital: 334715780.6284169......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:793 answer timeout"
+
+amount of money spent: 334710413.51000005
+Time of posting position: %s 4.841956615447998
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 794, current capital: 333739178.8033816......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:794 answer timeout"
+
+amount of money spent: 333734856.6600001
+Time of posting position: %s 4.866790056228638
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 795, current capital: 334615558.9550834......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:795 answer timeout"
+
+amount of money spent: 334610254.2899999
+Time of posting position: %s 4.891343116760254
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 796, current capital: 335010114.032892......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:796 answer timeout"
+
+amount of money spent: 335004860.51000017
+Time of posting position: %s 5.913145542144775
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 797, current capital: 335240416.0721861......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:797 answer timeout"
+
+amount of money spent: 335235289.27
+Time of posting position: %s 4.907643556594849
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 798, current capital: 334757373.969957......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:798 answer timeout"
+
+amount of money spent: 334754050.59999985
+Time of posting position: %s 4.909099340438843
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 799, current capital: 336238047.483293......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:799 answer timeout"
+
+amount of money spent: 336233736.00000006
+Time of posting position: %s 4.932251691818237
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 800, current capital: 335830634.4099127......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:800 answer timeout"
+
+amount of money spent: 335827310.3900001
+Time of posting position: %s 5.4407806396484375
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 801, current capital: 335751335.1879515......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:801 answer timeout"
+
+amount of money spent: 335747861.9
+Time of posting position: %s 4.920725584030151
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 802, current capital: 336167919.36832744......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:802 answer timeout"
+
+amount of money spent: 336164256.03999996
+Time of posting position: %s 4.96165132522583
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 803, current capital: 335942353.783755......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:803 answer timeout"
+
+amount of money spent: 335938676.1400001
+Time of posting position: %s 4.975954532623291
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 804, current capital: 336580484.22571355......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:804 answer timeout"
+
+amount of money spent: 336575232.5300001
+Time of posting position: %s 5.481715440750122
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 805, current capital: 336558817.53487855......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:805 answer timeout"
+
+amount of money spent: 336554565.7599999
+Time of posting position: %s 4.966163158416748
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 806, current capital: 337556354.43819076......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:806 answer timeout"
+
+amount of money spent: 337552545.92
+Time of posting position: %s 4.998786687850952
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 807, current capital: 336892932.64834666......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:807 answer timeout"
+
+amount of money spent: 336889669.99
+Time of posting position: %s 5.012757778167725
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 808, current capital: 337582397.3950678......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:808 answer timeout"
+
+amount of money spent: 337577894.93
+Time of posting position: %s 5.108824729919434
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 809, current capital: 337914157.6421412......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:809 answer timeout"
+
+amount of money spent: 337908747.1100001
+Time of posting position: %s 5.102696657180786
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 810, current capital: 338484936.5426033......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:810 answer timeout"
+
+amount of money spent: 338480832.88
+Time of posting position: %s 5.046367406845093
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 811, current capital: 338680034.54550624......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:811 answer timeout"
+
+amount of money spent: 338674227.98
+Time of posting position: %s 5.057272434234619
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 812, current capital: 339509314.70241004......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:812 answer timeout"
+
+amount of money spent: 339504457.36
+Time of posting position: %s 5.069236993789673
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 813, current capital: 340331331.3612465......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:813 answer timeout"
+
+amount of money spent: 340325771.0800001
+Time of posting position: %s 6.009383678436279
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 815, current capital: 341732758.86509585......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:814 answer timeout"
+
+amount of money spent: 341727427.79
+Time of posting position: %s 5.062652826309204
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 816, current capital: 342087126.28467846......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:815 answer timeout"
+
+amount of money spent: 342081965.09
+Time of posting position: %s 5.094574689865112
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 817, current capital: 343281422.70234025......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:816 answer timeout"
+
+amount of money spent: 343278013.9699999
+Time of posting position: %s 5.106008529663086
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 818, current capital: 343692959.62014157......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:817 answer timeout"
+
+amount of money spent: 343687550.2499999
+Time of posting position: %s 5.118901014328003
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 819, current capital: 343289019.0426196......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:818 answer timeout"
+
+amount of money spent: 343284762.43999994
+Time of posting position: %s 5.147312164306641
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 820, current capital: 343391827.48616487......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:819 answer timeout"
+
+amount of money spent: 343386191.7799999
+Time of posting position: %s 5.119378089904785
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 821, current capital: 341773910.2122559......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:820 answer timeout"
+
+amount of money spent: 341767964.4399999
+Time of posting position: %s 5.162512540817261
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 822, current capital: 340930463.733318......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:821 answer timeout"
+
+amount of money spent: 340925674.81000006
+Time of posting position: %s 5.168365478515625
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 823, current capital: 340451079.7153813......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:822 answer timeout"
+
+amount of money spent: 340446528.0999999
+Time of posting position: %s 6.177056312561035
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 824, current capital: 341406594.57043314......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:823 answer timeout"
+
+amount of money spent: 341401937.42000014
+Time of posting position: %s 5.17799711227417
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 825, current capital: 340848495.6715888......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:824 answer timeout"
+
+amount of money spent: 340842741.42
+Time of posting position: %s 5.162150144577026
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 826, current capital: 339528491.65645725......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:825 answer timeout"
+
+amount of money spent: 339523108.30999994
+Time of posting position: %s 5.210534334182739
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 827, current capital: 339984113.4362299......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:826 answer timeout"
+
+amount of money spent: 339978597.03000003
+Time of posting position: %s 5.217387914657593
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 828, current capital: 339912897.15484095......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:827 answer timeout"
+
+amount of money spent: 339908268.23000014
+Time of posting position: %s 6.246901988983154
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 830, current capital: 339499398.27372676......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:828 answer timeout"
+
+amount of money spent: 339494545.3300001
+Time of posting position: %s 5.258657455444336
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 831, current capital: 338736170.77887946......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:829 answer timeout"
+
+amount of money spent: 338731608.09
+Time of posting position: %s 5.2260425090789795
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 832, current capital: 337839381.4387502......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:830 answer timeout"
+
+amount of money spent: 337833720.27000004
+Time of posting position: %s 5.257117033004761
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 833, current capital: 339198790.94345737......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:831 answer timeout"
+
+amount of money spent: 339194424.0099998
+Time of posting position: %s 5.272638320922852
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 834, current capital: 338981046.4051199......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:832 answer timeout"
+
+amount of money spent: 338977027.00999993
+Time of posting position: %s 5.2853264808654785
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 835, current capital: 339915216.8637105......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:833 answer timeout"
+
+amount of money spent: 339910441.82000005
+Time of posting position: %s 5.306920289993286
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 836, current capital: 340162445.03564304......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:834 answer timeout"
+
+amount of money spent: 340158749.08
+Time of posting position: %s 5.275830030441284
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 837, current capital: 341764423.9571593......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:835 answer timeout"
+
+amount of money spent: 341759882.32
+Time of posting position: %s 5.324073553085327
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 838, current capital: 342332279.39928156......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:836 answer timeout"
+
+amount of money spent: 342326982.5999999
+Time of posting position: %s 5.813691139221191
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 839, current capital: 341864071.0145655......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:837 answer timeout"
+
+amount of money spent: 341860456.92999995
+Time of posting position: %s 5.340639114379883
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 840, current capital: 341062706.9678121......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:838 answer timeout"
+
+amount of money spent: 341057293.9200001
+Time of posting position: %s 5.355435371398926
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 841, current capital: 342730382.923882......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:839 answer timeout"
+
+amount of money spent: 342725916.66
+Time of posting position: %s 5.329164743423462
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 843, current capital: 342635264.63464534......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:840 answer timeout"
+
+amount of money spent: 342630598.4299999
+Time of posting position: %s 5.367889881134033
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 844, current capital: 342943601.7077457......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:841 answer timeout"
+
+amount of money spent: 342940159.11999995
+Time of posting position: %s 6.039553880691528
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 845, current capital: 342564854.9615992......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:842 answer timeout"
+
+amount of money spent: 342560960.71
+Time of posting position: %s 5.4362406730651855
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 846, current capital: 341978302.15094966......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:843 answer timeout"
+
+amount of money spent: 341974179.61999995
+Time of posting position: %s 5.399019956588745
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 847, current capital: 341883444.13241607......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:844 answer timeout"
+
+amount of money spent: 341879024.93
+Time of posting position: %s 5.3802008628845215
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 848, current capital: 342103003.88723135......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:845 answer timeout"
+
+amount of money spent: 342098947.12
+Time of posting position: %s 5.421118259429932
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 849, current capital: 342557168.04729563......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:846 answer timeout"
+
+amount of money spent: 342552834.4800002
+Time of posting position: %s 5.6830689907073975
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 850, current capital: 341194382.7054187......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:847 answer timeout"
+
+amount of money spent: 341190019.85
+Time of posting position: %s 5.46712851524353
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 852, current capital: 342052277.6098309......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:848 answer timeout"
+
+amount of money spent: 342047606.34
+Time of posting position: %s 5.449946641921997
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 853, current capital: 342084857.94552875......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:849 answer timeout"
+
+amount of money spent: 342080567.03000003
+Time of posting position: %s 5.47074031829834
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 854, current capital: 340666315.01883614......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:850 answer timeout"
+
+amount of money spent: 340662123.26000005
+Time of posting position: %s 5.478882312774658
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 855, current capital: 342134096.0939837......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:851 answer timeout"
+
+amount of money spent: 342129595.89999986
+Time of posting position: %s 5.455071210861206
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 856, current capital: 342206923.6398827......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:852 answer timeout"
+
+amount of money spent: 342201621.88
+Time of posting position: %s 5.512921094894409
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 857, current capital: 341708463.4308935......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:853 answer timeout"
+
+amount of money spent: 341704815.0100001
+Time of posting position: %s 5.50917387008667
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 858, current capital: 340701646.3990383......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:854 answer timeout"
+
+amount of money spent: 340697698.0499999
+Time of posting position: %s 5.521372318267822
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 860, current capital: 341360921.1038502......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:855 answer timeout"
+
+amount of money spent: 341353810.69
+Time of posting position: %s 5.529890537261963
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 861, current capital: 338935423.79399836......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:856 answer timeout"
+
+amount of money spent: 338930353.8600001
+Time of posting position: %s 5.541640043258667
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 862, current capital: 339408711.02355975......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:857 answer timeout"
+
+amount of money spent: 339404472.33000004
+Time of posting position: %s 5.556001663208008
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 863, current capital: 340360926.4635007......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:858 answer timeout"
+
+amount of money spent: 340356817.30999994
+Time of posting position: %s 5.859584093093872
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 864, current capital: 339607874.30415684......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:859 answer timeout"
+
+amount of money spent: 339603306.65999997
+Time of posting position: %s 6.562100648880005
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 866, current capital: 341285313.2575242......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:860 answer timeout"
+
+amount of money spent: 341280052.78000003
+Time of posting position: %s 5.593455791473389
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 867, current capital: 341152897.56636894......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:861 answer timeout"
+
+amount of money spent: 341147835.1399999
+Time of posting position: %s 5.596592426300049
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 868, current capital: 340783043.5912912......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:862 answer timeout"
+
+amount of money spent: 340778371.6900001
+Time of posting position: %s 5.614161252975464
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 869, current capital: 340060807.49144965......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:863 answer timeout"
+
+amount of money spent: 340056365.9200001
+Time of posting position: %s 5.6158082485198975
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 870, current capital: 340370116.4905441......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:864 answer timeout"
+
+amount of money spent: 340364112.56
+Time of posting position: %s 5.634194374084473
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 871, current capital: 339707524.92061293......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:865 answer timeout"
+
+amount of money spent: 339701744.64999986
+Time of posting position: %s 5.603738307952881
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 872, current capital: 338881670.67334133......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:866 answer timeout"
+
+amount of money spent: 338876454.01
+Time of posting position: %s 6.61963152885437
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 874, current capital: 338883821.82146025......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:867 answer timeout"
+
+amount of money spent: 338879066.8499999
+Time of posting position: %s 5.660907983779907
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 875, current capital: 339250286.24616253......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:868 answer timeout"
+
+amount of money spent: 339244992.88
+Time of posting position: %s 5.669709920883179
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 876, current capital: 338964317.72810155......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:869 answer timeout"
+
+amount of money spent: 338960375.8
+Time of posting position: %s 5.6921892166137695
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 877, current capital: 339235665.2072747......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:870 answer timeout"
+
+amount of money spent: 339230969.52999985
+Time of posting position: %s 5.69474720954895
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 878, current capital: 338848646.43450296......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:871 answer timeout"
+
+amount of money spent: 338843541.65000004
+Time of posting position: %s 5.698827505111694
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 879, current capital: 337698311.9660679......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:872 answer timeout"
+
+amount of money spent: 337690824.7699999
+Time of posting position: %s 5.69336724281311
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 881, current capital: 338683548.0932577......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:873 answer timeout"
+
+amount of money spent: 338677364.5899999
+Time of posting position: %s 5.735989093780518
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 882, current capital: 338977173.5598587......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:874 answer timeout"
+
+amount of money spent: 338971916.6699999
+Time of posting position: %s 5.7408459186553955
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 883, current capital: 339012167.8389755......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:875 answer timeout"
+
+amount of money spent: 339007834.40999997
+Time of posting position: %s 5.744182825088501
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 884, current capital: 339916735.00282425......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:876 answer timeout"
+
+amount of money spent: 339911254.6
+Time of posting position: %s 5.752880811691284
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 885, current capital: 339088978.3208244......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:877 answer timeout"
+
+amount of money spent: 339082930.63
+Time of posting position: %s 5.756372451782227
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 886, current capital: 340418634.97089803......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:878 answer timeout"
+
+amount of money spent: 340412608.48
+Time of posting position: %s 5.793133497238159
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 888, current capital: 341821452.5882436......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:879 answer timeout"
+
+amount of money spent: 341815085.20000005
+Time of posting position: %s 6.661461591720581
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 889, current capital: 342300235.44372916......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:880 answer timeout"
+
+amount of money spent: 342295179.13000005
+Time of posting position: %s 6.664286136627197
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 890, current capital: 344027805.07731533......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:881 answer timeout"
+
+amount of money spent: 344023258.2299998
+Time of posting position: %s 6.718569993972778
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 892, current capital: 343367834.07109565......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:882 answer timeout"
+
+amount of money spent: 343362278.36999995
+Time of posting position: %s 5.828552007675171
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 893, current capital: 341652397.4903984......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:883 answer timeout"
+
+amount of money spent: 341647107.68
+Time of posting position: %s 5.828255891799927
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 894, current capital: 340842632.8480072......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:884 answer timeout"
+
+amount of money spent: 340837417.5699998
+Time of posting position: %s 5.844995737075806
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 895, current capital: 341052932.27125233......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:885 answer timeout"
+
+amount of money spent: 341047362.52000016
+Time of posting position: %s 5.858484268188477
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 896, current capital: 341683948.9769832......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:886 answer timeout"
+
+amount of money spent: 341678042.54999995
+Time of posting position: %s 5.867882013320923
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 897, current capital: 341455573.4925411......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}
+reason: "FATAL ERROR: User_id:67 Sequence:887 answer timeout"
+
+amount of money spent: 341450045.29
+Time of posting position: %s 5.872966766357422
+
+======
+======
+======
+======
+======
+======
+======
+======
+======
+======
+current day: 898, current capital: 341959763.2671552......
+
+{'Size', 'VolumePct', 'Pct', 'Mom'}

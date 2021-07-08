@@ -39,19 +39,20 @@ warnings.filterwarnings("ignore")
 
 
 def initialize():
-
+    '''
+    使用login接口接入服务器
+    '''
     channel = grpc.insecure_channel('47.100.97.93:40723')
     stub = contest_pb2_grpc.ContestStub(channel)
     response = stub.login(contest_pb2.LoginRequest(user_id = 67, user_pin ='GkwB5rYqHu'))
     print(response)
     return stub, response.session_key
 
-def get_data(_sequence,stub2):
-    response2 = stub2.get_question(question_pb2.QuestionRequest(user_id = 67, user_pin ='GkwB5rYqHu', sequence = _sequence))
-
-    return response2
 
 def send_positions(_positions,_stub,_session_key,_sequence):
+    '''
+    提交答案。答案中包括编号sequence和一个安安数组position（position顺序和股票数据顺序一致）
+    '''
     response3 = stub.submit_answer(contest_pb2.AnswerRequest(   user_id = 67, \
                                                                 user_pin ='GkwB5rYqHu', \
                                                                 session_key = _session_key, \
@@ -59,12 +60,17 @@ def send_positions(_positions,_stub,_session_key,_sequence):
                                                                 positions = _positions ))
     print(response3)
 
+def get_data(_sequence,stub2):
+    response2 = stub2.get_question(question_pb2.QuestionRequest(user_id = 67, \
+                                                                user_pin ='GkwB5rYqHu', \
+                                                                sequence = _sequence))
+    return response2
+
 def try_to_save_time(_my_sequence, _stub2):
     '''
     初始请求时间计算，为了尽量能够更早的
     '''
     while True:
-        
         response = get_data(_my_sequence,_stub2)
         
         if response.sequence == -1:
@@ -77,32 +83,33 @@ def try_to_save_time(_my_sequence, _stub2):
 
         
 
-    
-
-# 一些初始化
-
+# contest channel
 stub,session_key = initialize()
+
+# question channel
 channel2 = grpc.insecure_channel('47.100.97.93:40722')
 stub2 = question_pb2_grpc.QuestionStub(channel2)
 
+# 请求当前服务器最新的数据
 my_sequence = 0
-
 response = try_to_save_time(my_sequence, stub2)
 my_sequence = response.sequence
 
 all_all_list = {}
 
 ## 正式运行
-print("I'm going...")
 while(True):
     
     my_sequence += 1
     response = try_to_save_time(my_sequence,stub2)
-
+    
     start =  time.time()
-    print(response.has_next_question,response.capital,response.sequence)
-
-    temp_dic = pd.DataFrame(columns = ['day','stock','open','high','low','close','volume'])
+    not_end = response.has_next_question
+    cur_day = response.sequence
+    cur_capital = response.capital
+    print("\n" + "======"*10)
+    print('current day: {}, current capital: {}......\n'.format(cur_day, cur_capital))
+    temp_dic = pd.DataFrame(columns = ['Date','Instrument','Open','High','Low','Close','Volume','Amount'])
 
     all_list = []
 
@@ -111,7 +118,7 @@ while(True):
     stock_numbers = len(response.dailystk)
 
     for i in range(0,stock_numbers):
-        # temp_dic = temp_dic.append({'day':response.dailystk[i].values[0],'stock':int(response.dailystk[i].values[1]), 'open':response.dailystk[i].values[2],'high':response.dailystk[i].values[3],'low':response.dailystk[i].values[4],'close':response.dailystk[i].values[5],'volume':response.dailystk[i].values[6]}, ignore_index=True)
+        temp_dic = temp_dic.append({'day':response.dailystk[i].values[0],'stock':int(response.dailystk[i].values[1]), 'open':response.dailystk[i].values[2],'high':response.dailystk[i].values[3],'low':response.dailystk[i].values[4],'close':response.dailystk[i].values[5],'volume':response.dailystk[i].values[6]}, ignore_index=True)
         all_list.append(response.dailystk[i].values)
 
     try:

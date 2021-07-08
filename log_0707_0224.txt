@@ -1,0 +1,253 @@
+user_id: 67
+user_pin: "GkwB5rYqHu"
+session_key: "BAIH57"
+init_capital: 504006742.6037876
+success: true
+
+not end: True, current day: 279, current capital: 503975006.07561964......
+
+not end: True, current day: 280, current capital: 503975006.07561964......
+
+not end: True, current day: 281, current capital: 501178786.1987279......
+
+not end: True, current day: 282, current capital: 502813452.84019893......
+
+not end: True, current day: 283, current capital: 508300355.9159476......
+
+not end: True, current day: 284, current capital: 504387302.48248994......
+
+           Mom  Size  VolumePct
+Mom        NaN   NaN        NaN
+Size       NaN   1.0        NaN
+VolumePct  NaN   NaN        NaN
+{'Size'}
+reason: "no enough money, current capital=504387302.48, estimated market_value=1008774604.96, estimated commission=680963.43"
+
+Time of posting position: %s 1.7719943523406982
+not end: True, current day: 285, current capital: 504387302.48248994......
+
+           Mom      Size  VolumePct
+Mom        NaN       NaN        NaN
+Size       NaN  1.000000  -0.011097
+VolumePct  NaN -0.011097   1.000000
+{'VolumePct', 'Size'}
+reason: "no enough money, current capital=502510011.97, estimated market_value=1008774604.96, estimated commission=756238.25"
+
+Time of posting position: %s 2.104133129119873
+not end: True, current day: 286, current capital: 502510011.9657502......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.196017   0.072921
+Size       0.196017  1.000000  -0.002220
+VolumePct  0.072921 -0.002220   1.000000
+{'VolumePct', 'Size', 'Mom'}
+accepted: true
+
+Time of posting position: %s 1.839850664138794
+not end: True, current day: 287, current capital: 505312355.6263929......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.176261   0.123661
+Size       0.176261  1.000000   0.006399
+VolumePct  0.123661  0.006399   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=503722249.00, estimated market_value=1010624711.25, estimated commission=287966.97"
+
+Time of posting position: %s 1.8223483562469482
+not end: True, current day: 288, current capital: 503722248.9960716......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.152015   0.187694
+Size       0.152015  1.000000   0.016649
+VolumePct  0.187694  0.016649   1.000000
+{'VolumePct', 'Size', 'Mom'}
+accepted: true
+
+Time of posting position: %s 1.8433494567871094
+not end: True, current day: 289, current capital: 504358319.8014039......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.144755   0.226824
+Size       0.144755  1.000000   0.019142
+VolumePct  0.226824  0.019142   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=504111938.95, estimated market_value=1008716639.60, estimated commission=377220.24"
+
+Time of posting position: %s 1.8873052597045898
+not end: True, current day: 290, current capital: 504111938.94565207......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.149704   0.235474
+Size       0.149704  1.000000   0.018608
+VolumePct  0.235474  0.018608   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=504135379.30, estimated market_value=1008223877.89, estimated commission=508483.22"
+
+Time of posting position: %s 1.8805148601531982
+not end: True, current day: 291, current capital: 504918234.8320416......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.158608   0.258534
+Size       0.158608  1.000000   0.018972
+VolumePct  0.258534  0.018972   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=504918234.83, estimated market_value=1009836469.66, estimated commission=579261.99"
+
+Time of posting position: %s 1.9012901782989502
+not end: True, current day: 292, current capital: 504918234.8320416......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.156892   0.266638
+Size       0.156892  1.000000   0.016567
+VolumePct  0.266638  0.016567   1.000000
+{'VolumePct', 'Size', 'Mom'}
+accepted: true
+
+Time of posting position: %s 2.1113717555999756
+not end: True, current day: 293, current capital: 510030107.6563286......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.154327   0.276537
+Size       0.154327  1.000000   0.014946
+VolumePct  0.276537  0.014946   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=510030107.66, estimated market_value=1020060215.31, estimated commission=340205.64"
+
+Time of posting position: %s 1.9369094371795654
+not end: True, current day: 294, current capital: 513797719.3036938......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.151307   0.291893
+Size       0.151307  1.000000   0.015000
+VolumePct  0.291893  0.015000   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=513797719.30, estimated market_value=1027595438.61, estimated commission=483479.55"
+
+Time of posting position: %s 1.9507715702056885
+not end: True, current day: 295, current capital: 513797719.3036938......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.146387   0.305967
+Size       0.146387  1.000000   0.016752
+VolumePct  0.305967  0.016752   1.000000
+{'VolumePct', 'Size', 'Mom'}
+accepted: true
+
+Time of posting position: %s 1.9971134662628174
+not end: True, current day: 296, current capital: 516482601.2693848......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.131563   0.311728
+Size       0.131563  1.000000   0.014852
+VolumePct  0.311728  0.014852   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=516482601.27, estimated market_value=1032965202.54, estimated commission=400710.70"
+
+Time of posting position: %s 3.0413694381713867
+not end: True, current day: 297, current capital: 516482601.2693848......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.122741   0.312113
+Size       0.122741  1.000000   0.009830
+VolumePct  0.312113  0.009830   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=514206143.41, estimated market_value=1032965202.54, estimated commission=597842.54"
+
+Time of posting position: %s 2.0101799964904785
+not end: True, current day: 298, current capital: 514206143.40584594......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.121883   0.299881
+Size       0.121883  1.000000   0.004378
+VolumePct  0.299881  0.004378   1.000000
+{'VolumePct', 'Size', 'Mom'}
+accepted: true
+
+Time of posting position: %s 2.0535295009613037
+not end: True, current day: 299, current capital: 515311377.23012424......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.120086   0.287316
+Size       0.120086  1.000000   0.000401
+VolumePct  0.287316  0.000401   1.000000
+{'VolumePct', 'Size', 'Mom'}
+accepted: true
+
+Time of posting position: %s 2.2586913108825684
+not end: True, current day: 300, current capital: 515773764.2026775......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.113719   0.273551
+Size       0.113719  1.000000  -0.003567
+VolumePct  0.273551 -0.003567   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=512514876.53, estimated market_value=1031547528.41, estimated commission=295763.15"
+
+Time of posting position: %s 2.0588505268096924
+not end: True, current day: 301, current capital: 512514876.52890897......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.105317   0.263776
+Size       0.105317  1.000000  -0.007356
+VolumePct  0.263776 -0.007356   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=511598060.67, estimated market_value=1025029753.06, estimated commission=453467.15"
+
+Time of posting position: %s 2.103395700454712
+not end: True, current day: 302, current capital: 511598060.66602045......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.097950   0.257896
+Size       0.097950  1.000000  -0.010293
+VolumePct  0.257896 -0.010293   1.000000
+{'VolumePct', 'Size', 'Mom'}
+accepted: true
+
+Time of posting position: %s 2.1022441387176514
+not end: True, current day: 303, current capital: 514066662.3809178......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.089241   0.259070
+Size       0.089241  1.000000  -0.014223
+VolumePct  0.259070 -0.014223   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=514066662.38, estimated market_value=1028133324.76, estimated commission=394769.98"
+
+Time of posting position: %s 2.116575002670288
+not end: True, current day: 304, current capital: 515159448.8339275......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.078080   0.262882
+Size       0.078080  1.000000  -0.018602
+VolumePct  0.262882 -0.018602   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=515159448.83, estimated market_value=1030318897.67, estimated commission=588925.77"
+
+Time of posting position: %s 2.1774401664733887
+not end: True, current day: 305, current capital: 516781848.4916324......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.067276   0.264878
+Size       0.067276  1.000000  -0.023223
+VolumePct  0.264878 -0.023223   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=516781848.49, estimated market_value=1033563696.98, estimated commission=670664.66"
+
+Time of posting position: %s 2.161918878555298
+not end: True, current day: 306, current capital: 514668006.3608954......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.057253   0.269776
+Size       0.057253  1.000000  -0.024426
+VolumePct  0.269776 -0.024426   1.000000
+{'VolumePct', 'Size', 'Mom'}
+reason: "no enough money, current capital=514668006.36, estimated market_value=1029336012.72, estimated commission=710799.42"
+
+Time of posting position: %s 2.1790308952331543
+not end: True, current day: 307, current capital: 512067286.6624499......
+
+                Mom      Size  VolumePct
+Mom        1.000000  0.050009   0.274582
+Size       0.050009  1.000000  -0.022926
+VolumePct  0.274582 -0.022926   1.000000
+{'VolumePct', 'Size', 'Mom'}
