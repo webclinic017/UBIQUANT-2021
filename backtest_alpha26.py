@@ -1,32 +1,17 @@
-# Copyright 2015 gRPC authors.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+'''
+v_1.4
+alpha101单因子测试
+'''
 
 from __future__ import print_function
 import logging
 
-from matplotlib.pyplot import close
-
-import grpc
-import question_pb2
-import question_pb2_grpc
-import contest_pb2
-import contest_pb2_grpc
 
 import os
 import time
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 import scipy.optimize as sco
 from sklearn import preprocessing
@@ -40,47 +25,6 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import warnings
 warnings.filterwarnings("ignore")
 
-def initialize():
-    '''
-    使用login接口接入服务器
-    '''
-    channel = grpc.insecure_channel('47.100.97.93:40723')
-    stub = contest_pb2_grpc.ContestStub(channel)
-    response = stub.login(contest_pb2.LoginRequest(user_id = 67, user_pin ='GkwB5rYqHu'))
-    # print(response)
-    return stub, response.session_key
-
-
-def send_positions(_positions,_stub,_session_key,_sequence):
-    '''
-    提交答案。答案中包括编号sequence和一个安安数组position（position顺序和股票数据顺序一致）
-    '''
-    response3 = stub.submit_answer(contest_pb2.AnswerRequest(   user_id = 67, \
-                                                                user_pin ='GkwB5rYqHu', \
-                                                                session_key = _session_key, \
-                                                                sequence = _sequence,\
-                                                                positions = _positions ))
-    print(response3)
-
-def get_data(_sequence,stub2):
-    response2 = stub2.get_question(question_pb2.QuestionRequest(user_id = 67, \
-                                                                user_pin ='GkwB5rYqHu', \
-                                                                sequence = _sequence))
-    return response2
-
-def try_to_save_time(_my_sequence, _stub2):
-    '''
-    初始请求时间计算，为了尽量能够更早的
-    '''
-    while True:
-        response = get_data(_my_sequence,_stub2)
-        
-        if response.sequence == -1:
-            time.sleep(0.1)
-            continue
-        
-        elif response.sequence>=0:
-            return response
 
 
 ############################ Define our factors ####################################### 
@@ -153,14 +97,59 @@ def VolumePct(data):
     v_pct = v_pct.rolling(window=5).mean()
     return -v_pct.iloc[-1]
 
+###############################   Alpha 101   ##############################
+def Alpha6(data):
+    _open = pd.Series(np.array(data)[:, 2])                # 开盘价
+    volume = pd.Series(np.array(data)[:, 6])              # 股票N天的volume数据
+    alpha6 = _open.rolling(window=10).corr(volume)
+    return -1*alpha6.iloc[-1]
+
+def Alpha7(data):
+    close = pd.Series(np.array(data)[:, 5])
+    amount = pd.Series(np.array(data)[:, 7])              # 股票N天的amount数据
+    mean_amount = amount.rolling(window=5).mean().iloc[-1]
+    if mean_amount<amount.iloc[-1]:
+        delta = close.diff(3).abs().iloc[-10:]
+        delta_rank = delta.rank()
+        return -1*delta_rank.iloc[-1]*np.sign(delta.iloc[-1])
+    else:
+        return -1
+
+def Alpha12(data):
+    close = pd.Series(np.array(data)[:, 5])
+    amount = pd.Series(np.array(data)[:, 7])              # 股票N天的amount数据
+    _sign = np.sign(amount.diff(1).iloc[-1])
+    delta = close.diff(1)
+    return -1*_sign*delta.iloc[-1]
+
+def Alpha23(data):
+    high = pd.Series(np.array(data)[:, 3])
+    _mean = high.rolling(10).mean()
+    _delta = high.diff(2)
+    if _mean.iloc[-1]<high.iloc[-1]:
+        return -1*_delta.iloc[-1]
+    else:
+        return 0
+
+def Alpha26(data):
+    high = pd.Series(np.array(data)[:, 3])[-10:]
+    amount = pd.Series(np.array(data)[:, 7])[-10:]
+    high_rank = high.rank()
+    amount_rank = amount.rank()
+    _corr = amount_rank.rolling(window=5).corr(high_rank)
+    res = _corr.rolling(window=3).max()
+
+    return -1*res.iloc[-1]
+
 
 ###############################   并行计算因子   ##############################
 def each_task(_key, _array):
     factors = []
-    factors.append(RSIIndividual(_array))
-    factors.append(SixDayRS(_array))
-    factors.append(Size(_array))
-    factors.append(VolumePct(_array))
+    # factors.append(RSIIndividual(_array))
+    # factors.append(SixDayRS(_array))
+    # factors.append(Size(_array))
+    # factors.append(VolumePct(_array))
+    factors.append(Alpha26(_array))
     return (_key, factors)
 
 def mp_task(batch, data):
@@ -210,26 +199,40 @@ def max_sharpe_ratio(mean_returns, cov_matrix, risk_free_rate):
                         method='SLSQP', bounds=bounds, constraints=constraints)
     return result
 
-stub,session_key = initialize()
-print('connected to server...')
+###############################   计算仓位收益率   ##############################
+def calculate_pct(all_data, position, my_sequence):
 
-# question channel
-channel2 = grpc.insecure_channel('47.100.97.93:40722')
-stub2 = question_pb2_grpc.QuestionStub(channel2)
+    # t+2 和 t+1 的价差
+    delta = all_data[all_data['Date'] == my_sequence+2]['Close'].values - \
+            all_data[all_data['Date'] == my_sequence+1]['Close'].values
 
-column_names = ['Date','Instrument','Open','High','Low','Close','Volume','Amount']
-data = {}
+    profit = position @ delta
+    return profit
 
-# 请求当前服务器最新的数据
-my_sequence = 0
-response = get_data(my_sequence, stub2)
-# response = try_to_save_time(my_sequence, stub2)
-my_sequence = response.sequence
-print('first sequence:', my_sequence)
-not_end = response.has_next_question
 
-daily_data = np.array([stock.values for stock in response.dailystk])
-daily_data = daily_data[:, 0:8]
+
+# 因子或是回归最多利用过去10天的数据
+MAX_NUM_RECORD = 10
+num_of_holding = 100
+leverage = 1
+my_sequence = 0        # 当前日期
+cur_capital = 5e8          # 初始资金
+fee = 1.5e-4           # 手续费率
+
+data = {}               # 储存一段时间的行情
+yesterday_close = []    # 记录昨日收盘价，用于计算当日收益率
+pct_record = []         # 记录每日收益率
+factors_record = []     # 记录每日因子值
+factors_weight = []     # 因子加权权重
+capital_record = []     # 记录资金变动
+
+file_name = r"./CONTEST_DATA_TEST_100_1.csv"
+all_data = pd.read_csv(file_name, 
+                    usecols=[0,1,2,3,4,5,6,7], 
+                    names=['Date','Instrument','Open','High','Low','Close','Volume','Amount'])
+
+
+daily_data = all_data[all_data['Date']==my_sequence].values
 num_of_stock = daily_data.shape[0]
 stock_list = np.arange(num_of_stock)
 
@@ -240,45 +243,21 @@ for i in range(num_of_stock):
     data[i] = []
     data[i].append(daily_data[i])
 
-# print(data)
-
-# 因子或是回归最多利用过去10天的数据
-MAX_NUM_RECORD = 10
-num_of_holding = 100
-leverage = 1
-
-yesterday_close = []  # 记录昨日收盘价，用于计算当日收益率
-pct_record = []         # 记录每日收益率
-factors_record = []     # 记录每日因子值
-factors_weight = []     # 因子加权权重
-
 stock_batch = list(_batch(stock_list))
 # print(stock_batch)
 
+total_days = 900
 mp.set_start_method('fork')
 
-while(True):
+while(my_sequence<total_days-5):
+    my_sequence += 1
     all_factors = [[]] * num_of_stock     # 每个股票的所有因子是一行
-    # my_sequence += 1
-    # print('my_sequence', my_sequence)
-    # stub, session_key = initialize()
-    try:
-        stub2 = question_pb2_grpc.QuestionStub(channel2)
-        response = get_data(my_sequence+1, stub2)
-    except:
-        time.sleep(0.1)
-        continue
-    if response.sequence == -1:
-        time.sleep(0.2)
-        continue
-
+    
     start =  time.time()
-    not_end = response.has_next_question
-    my_sequence = response.sequence
-    cur_capital = response.capital
+    capital_record.append(cur_capital-5e8)
     print('current day: {}, current capital: {}......\n'.format(my_sequence, cur_capital))
 
-    daily_data = np.array([stock.values for stock in response.dailystk])
+    daily_data = all_data[all_data['Date']==my_sequence].values
     daily_data = daily_data[:, 0:8]
     today_close = daily_data[:, 5]                    # 当日收盘价
     if len(yesterday_close)>0:                        # 从第二天开始算起
@@ -294,7 +273,10 @@ while(True):
     for i in range(num_of_stock):
         data[i].append(daily_data[i])
 
-    if len(data[0]) >= 10:
+    use_time = time.time() - start
+    print("Time of 🍦: ", round(use_time,2))
+
+    if len(data[0]) >= 7:
 
         with ProcessPoolExecutor() as executor:
             futures = [executor.submit(mp_task, batch, data) for batch in stock_batch]
@@ -308,7 +290,13 @@ while(True):
         # print(all_factors)
         print(len(all_factors))                                               # N * K
 
-        all_factors = preprocessing.scale(np.array(all_factors))              # 按列z-score标准化
+        use_time = time.time() - start
+        print("Time of 🍎: ", round(use_time,2))
+
+        all_factors = np.array(all_factors)
+        all_factors[np.isnan(all_factors)] = 0                                # 处理空值
+        all_factors[np.isinf(all_factors)] = 0                                # 处理无限值
+        all_factors = preprocessing.scale(all_factors)              # 按列z-score标准化
         # all_factors = np.hstack(([[1]]*num_of_stock, all_factors))            # 每一行最左侧插入[1]
         factors_record.append(all_factors)                                    # T * N * (K)，储存一段时间的因子值，用于计算因子收益率
         num_of_factor = all_factors.shape[1]
@@ -318,6 +306,9 @@ while(True):
         else:
             final_factors = np.hstack((all_factors, [[1]]*num_of_stock)) @ np.array(factors_weight)
         
+        use_time = time.time() - start
+        print("Time of 🍌: ", round(use_time,2))
+
         _rank = np.argsort(np.argsort(final_factors))    # 0-499，多因子等权组合之后的排序值
         _pos = np.array([0]*num_of_stock)
         
@@ -328,34 +319,60 @@ while(True):
         
         position = _pos * cur_capital * leverage / num_of_holding / today_close
         position[np.isnan(position)] = 0
-        position = list(position.astype(int))
+        position = position.astype(int)
         print("len of position: ", len(position))
         # print(position)
-        stub, session_key = initialize()
-        # my_sequence = response.sequence
-        send_positions(position ,stub, session_key, my_sequence)
+        daily_profit = calculate_pct(all_data, position, my_sequence)
+        cur_capital += daily_profit
+        cur_capital *= (1-fee)          # 扣除手续费
+
+        use_time = time.time() - start
+        print("Time of 🍊: ", round(use_time,2))
 
         if len(factors_record) >= 10:
             # 其实只做了8次回归，取平均值
             factors_weight = []
             
-            with ProcessPoolExecutor() as executor:
-                futures = [executor.submit(factor_regression, factors_record, pct_record, i+1) for i in range(len(factors_record)-2)]
-                for future in as_completed(futures):
-                    factors_weight.append(future.result())
+            # with ProcessPoolExecutor() as executor:
+            #     futures = [executor.submit(factor_regression, factors_record, pct_record, i+1) for i in range(len(factors_record)-2)]
+            #     for future in as_completed(futures):
+            #         factors_weight.append(future.result())
             
-            factors_weight = np.array(factors_weight).mean(axis=0)
-            factors_weight /= np.sum(factors_weight)
+            # factors_weight = np.array(factors_weight).mean(axis=0)
+            # factors_weight /= np.sum(factors_weight)
 
-            print("factors_weight: ", factors_weight)
-            factors_record.pop(0)
+            # print("factors_weight: ", factors_weight)
+            # if len(factors_record) >= 20: factors_record.pop(0)
+
+        use_time = time.time() - start
+        print("Time of 🍐: ", round(use_time,2))
 
         # 删除最老的一天的数据
-        for i in range(num_of_stock):
-            data[i].pop(0)
+        if len(data[0]) >= 20:
+            for i in range(num_of_stock):
+                data[i].pop(0)
         
-    use_time = time.time() - start
-    print("Time of posting position: %s", use_time)
-    time.sleep(max(4.5-use_time, 0.1))
+        use_time = time.time() - start
+        print("Time of 🍉: ", round(use_time,2))
+
+    # use_time = time.time() - start
+    # print("Time of posting position: %s", use_time)
+    # time.sleep(0.1)
     
     yesterday_close = today_close
+
+total_return = round(capital_record[-1]/5e8, 4)
+daily_pct = pd.Series(capital_record)+5e8
+daily_pct = daily_pct.pct_change()
+sharpe = daily_pct.mean() / daily_pct.std() * np.sqrt(252)
+sharpe = np.round(sharpe)
+
+_name = 'alpha26'
+plt.figure()
+plt.plot(capital_record)
+_title = "{}, ret:{}, sharpe:{}".format(_name, total_return, sharpe)
+plt.title(_title)
+plt.savefig('backtest_{}.png'.format(_name))
+
+factors_record = np.array(factors_record)[:,:,0]
+pd.DataFrame(factors_record).to_csv('factors_{}.csv'.format(_name))

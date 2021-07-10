@@ -78,6 +78,9 @@ def Volatility(close, window_length):
     volatility = pct.rolling(window=window_length, min_periods=21).std()
     return -volatility
 
+def Alpha2(data):
+    return data.Size + data.Volume
+
 ############################ 去极值处理 #######################################
 # def Winsorize(factor: pd.Series, n=2):
 #     '''

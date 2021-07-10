@@ -79,6 +79,15 @@ def Volatility(close, window_length):
     volatility = pct.rolling(window=window_length, min_periods=21).std()
     return -volatility
 
+def Alpha2_1(data):
+    data.loc[:, '_volume'] = data.Volume/data.Volume.shift(2)
+    data.loc[:, '_delta'] = (data.Close-data.Open)/data.Open
+    return data
+
+def Alpha2_2(data):
+    
+
+
 ############################ 去极值处理 #######################################
 # def Winsorize(factor: pd.Series, n=2):
 #     '''
@@ -180,6 +189,11 @@ if __name__ == "__main__":
     data.loc[:, 'Volatility'] = data.groupby('Date')['Volatility'].apply(Winsorize, (2))    # 因子离群值处理
     data.loc[:, 'Volatility'] = data.groupby('Date')['Volatility'].apply(Standardlize) 
 
+    data = data.groupby('Instrument').apply(Alpha2)
+    data.loc[:,'Alpha2'] = data.groupby('Instrument')['Alpha2'].shift(2)
+    data.loc[:, 'Alpha2'] = data.groupby('Date')['Alpha2'].apply(Winsorize, (2))    # 因子离群值处理
+    data.loc[:, 'Alpha2'] = data.groupby('Date')['Alpha2'].apply(Standardlize) 
+
     print(data[data['Instrument']==6000])
     print(data[data['Instrument']==6499])
 
@@ -189,14 +203,14 @@ if __name__ == "__main__":
     print(factor_corr)
 
     # RSI和SixDayRS大类因子合成
-    data.loc[:,'Mom'] = (data.loc[:,'RSI'] + data.loc[:,'SixDayRS'])/2
-    data.drop(['RSI', 'SixDayRS'], axis=1, inplace=True)
+    # data.loc[:,'Mom'] = (data.loc[:,'RSI'] + data.loc[:,'SixDayRS'])/2
+    # data.drop(['RSI', 'SixDayRS'], axis=1, inplace=True)
 
     # 去除无效因子OCDiff、F_Volume、Volatility无效因子
     data.drop(['OCDiff', 'F_Volume', 'Volatility'], axis=1, inplace=True)
 
     # final round 因子检验
-    factor_corr = data[['Mom', 'Size', 'VolumePct']].corr()
+    factor_corr = data[['RSI', 'SixDayRS', 'Size', 'VolumePct']].corr()
     print(factor_corr)
 
     # 构造多因子模型（不知道是不是Barra）
@@ -215,11 +229,11 @@ if __name__ == "__main__":
     if factor_name == 'Equal':
         for i in range(T):
             daily_data = data[data['Date']==sorted_dates[i]]
-            if np.sum(daily_data[['Mom', 'Size', 'VolumePct']].isnull().any())>0:
+            if np.sum(daily_data[['RSI', 'SixDayRS', 'Size', 'VolumePct']].isnull().any())>0:
                 continue
             
             N = daily_data.shape[0]
-            equal_factor = (daily_data['Mom']+daily_data['Size']+daily_data['VolumePct'])/3
+            equal_factor = (daily_data['RSI']+daily_data['SixDayRS']+daily_data['Size']+daily_data['VolumePct'])/4
 
             _rank = equal_factor.rank()
             # print(_rank)
@@ -266,4 +280,4 @@ if __name__ == "__main__":
     plt.figure()
     plt.plot(pnl)
     # plt.savefig(factor_name+'.png')
-    plt.savefig('./multifactors_figure/{}_pnl.png'.format(factor_name))
+    plt.savefig('./multifactors_figure/{}_4_pnl.png'.format(factor_name))
