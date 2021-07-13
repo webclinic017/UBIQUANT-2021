@@ -154,20 +154,18 @@ def Alpha54(data):
 def each_task(_key, _array):
     factors = []
     _array = np.array(_array)
-    T = _array.shape[0]
 
-    if T>=2:
-        factors.append(Alpha12(_array))
-        factors.append(Alpha54(_array))
-    if T>=6:
-        factors.append(Alpha9(_array))
-        factors.append(SixDayRS(_array)) 
-    if T>=10:
-        factors.append(Alpha6(_array))
-        factors.append(Alpha23(_array))
-        factors.append(Alpha53(_array))
-    if T>=20:
-        factors.append(Alpha51(_array))
+    factors.append(Alpha12(_array))
+    factors.append(Alpha54(_array))
+
+    factors.append(Alpha9(_array))
+    factors.append(SixDayRS(_array)) 
+
+    factors.append(Alpha6(_array))
+    factors.append(Alpha23(_array))
+    factors.append(Alpha53(_array))
+
+    factors.append(Alpha51(_array))
     
     return (_key, factors)
 
@@ -221,7 +219,7 @@ if __name__ == "__main__":
     # 因子或是回归最多利用过去20天的数据
     MAX_NUM_RECORD = 20
     num_of_holding = 100
-    leverage = 1.5
+    leverage = 1.0
 
     yesterday_close = []  # 记录昨日收盘价，用于计算当日收益率
     pct_record = []         # 记录每日收益率
@@ -270,7 +268,7 @@ if __name__ == "__main__":
         for i in range(num_of_stock):
             data[i].append(daily_data[i])
 
-        if len(data[0]) >= 2:
+        if len(data[0]) >= 20:
 
             with ProcessPoolExecutor() as executor:
                 futures = [executor.submit(mp_task, batch, data) for batch in stock_batch]
@@ -289,6 +287,7 @@ if __name__ == "__main__":
             all_factors[np.isinf(all_factors)] = 0                                # 处理无限值
             all_factors = preprocessing.scale(all_factors)                        # 按列z-score标准化
             # all_factors = np.hstack(([[1]]*num_of_stock, all_factors))            # 每一行最左侧插入[1]
+            factors_record.append(all_factors)                                    # T * N * (K)，储存一段时间的因子值，用于计算因子收益率
             num_of_factor = all_factors.shape[1]
             
             if len(factors_weight) == 0:
@@ -319,9 +318,26 @@ if __name__ == "__main__":
                 send_positions(position ,stub, session_key, my_sequence)
                 continue
             
+            factors_record_len = len(factors_record)
+            if factors_record_len >= 25:
+                factors_weight = []
+                for i in range(factors_record_len-2):
+                    factors_tmp = factors_record[-(i+3)]                    # N * K
+                    pct_tmp = pct_record[-(i+1)]                            # N * 1
+                    factors_corr = np.cov(factors_tmp, rowvar=0)
+                    factors_pct_corr = [np.cov(factors_tmp[:, j], pct_tmp)[0,1] for j in range(num_of_factor)]
+                    factors_weight.append(factors_corr @ factors_pct_corr)
+                factors_weight = np.array(factors_weight).mean(axis=0)      # 按列平均
+                factors_weight /= np.sum(factors_weight)
+
+                # print("factors_weight: ", factors_weight)
+                if factors_record_len >= 25: factors_record.pop(0)
+
+                use_time = time.time() - start
+                print("Time of 🍊: ", round(use_time,2))
 
             # 删除最老的一天的数据
-            if len(data[0]) >= 20:
+            if len(data[0]) >= 22:
                 for i in range(num_of_stock):
                     data[i].pop(0)
             
